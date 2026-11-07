@@ -16,6 +16,7 @@ from html.parser import HTMLParser
 from io import BytesIO
 import errno
 import hashlib
+import http.client
 import json
 import os
 from pathlib import Path
@@ -84,6 +85,42 @@ class OfficialRedirects(urllib.request.HTTPRedirectHandler):
     def redirect_request(self, req, fp, code, msg, headers, newurl):
         public_url(newurl)
         return super().redirect_request(req, fp, code, msg, headers, newurl)
+
+
+def connect_ipv4(address, timeout=socket._GLOBAL_DEFAULT_TIMEOUT, source_address=None):
+    """Use the normal resolver for A records, scoped to one connection."""
+    host, port = address
+    last_error = None
+    for family, socktype, proto, _, sockaddr in socket.getaddrinfo(host, port, socket.AF_INET, socket.SOCK_STREAM):
+        sock = None
+        try:
+            sock = socket.socket(family, socktype, proto)
+            if timeout is not socket._GLOBAL_DEFAULT_TIMEOUT:
+                sock.settimeout(timeout)
+            if source_address:
+                sock.bind(source_address)
+            sock.connect(sockaddr)
+            return sock
+        except OSError as exc:
+            last_error = exc
+            if sock is not None:
+                sock.close()
+    if last_error is not None:
+        raise last_error
+    raise OSError("El resolver no devolvió direcciones IPv4")
+
+
+class IPv4HTTPSConnection(http.client.HTTPSConnection):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        # Keep standard HTTPS connect(), SNI, proxy tunneling and certificate
+        # verification. Never replace a process-wide resolver used by threads.
+        self._create_connection = connect_ipv4
+
+
+class IPv4HTTPSHandler(urllib.request.HTTPSHandler):
+    def https_open(self, req):
+        return self.do_open(IPv4HTTPSConnection, req, context=self._context)
 
 
 @dataclass
@@ -155,6 +192,7 @@ def fetch(url: str, kind: str = "html", max_bytes: int = MAX_BYTES) -> Response:
     request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": accept})
     opener = urllib.request.build_opener(OfficialRedirects())
     for attempt in range(2):
+        retry_ipv4 = False
         try:
             with opener.open(request, timeout=TIMEOUT_SECONDS) as response:
                 public_url(response.url)
@@ -184,10 +222,14 @@ def fetch(url: str, kind: str = "html", max_bytes: int = MAX_BYTES) -> Response:
             cause = exc
             message, retry = network_failure(exc)
             delay = 1.0 if retry else None
+            reason = exc.reason if isinstance(exc, urllib.error.URLError) else exc
+            retry_ipv4 = isinstance(reason, socket.gaierror) and reason.errno == socket.EAI_AGAIN
         if attempt == 1 or not retry or delay is None:
             suffix = " tras 2 intentos" if attempt == 1 else ""
             host = urllib.parse.urlsplit(url).hostname
             raise SourceError(f"{host}: {message}{suffix}") from cause
+        if retry_ipv4:
+            opener = urllib.request.build_opener(OfficialRedirects(), IPv4HTTPSHandler())
         time.sleep(delay)
 
 

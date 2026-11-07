@@ -29,36 +29,84 @@ class TransportTests(unittest.TestCase):
         error = c.urllib.error.URLError(c.ssl.SSLCertVerificationError(1, "certificate verify failed"))
         opener = Mock()
         opener.open.side_effect = error
-        with patch.object(c.urllib.request, "build_opener", return_value=opener), patch.object(c.time, "sleep") as sleep:
+        with patch.object(c.urllib.request, "build_opener", return_value=opener) as build, patch.object(c.time, "sleep") as sleep:
             with self.assertRaisesRegex(c.SourceError, "Error TLS.*certificado"):
                 c.fetch(c.ENFEN_URL)
+        self.assertEqual(build.call_count, 1)
         self.assertEqual(opener.open.call_count, 1)
         sleep.assert_not_called()
 
-    def test_temporary_dns_error_gets_one_retry(self):
-        opener = Mock()
-        opener.open.side_effect = [c.urllib.error.URLError(c.socket.gaierror(c.socket.EAI_AGAIN, "Temporary failure")), FakeHtmlResponse()]
-        with patch.object(c.urllib.request, "build_opener", return_value=opener), patch.object(c.time, "sleep") as sleep:
+    def test_temporary_dns_error_gets_one_scoped_ipv4_retry(self):
+        opener, fallback = Mock(), Mock()
+        opener.open.side_effect = c.urllib.error.URLError(c.socket.gaierror(c.socket.EAI_AGAIN, "Temporary failure"))
+        fallback.open.return_value = FakeHtmlResponse()
+        with patch.object(c.urllib.request, "build_opener", side_effect=[opener, fallback]) as build, patch.object(c.time, "sleep") as sleep:
             value = c.fetch(c.ENFEN_URL)
         self.assertEqual(value.content_type, "text/html")
-        self.assertEqual(opener.open.call_count, 2)
+        self.assertEqual(opener.open.call_count, 1)
+        self.assertEqual(fallback.open.call_count, 1)
+        self.assertEqual(build.call_count, 2)
+        self.assertEqual([type(h) for h in build.call_args_list[0].args], [c.OfficialRedirects])
+        self.assertEqual([type(h) for h in build.call_args_list[1].args], [c.OfficialRedirects, c.IPv4HTTPSHandler])
         sleep.assert_called_once_with(1.0)
+
+    def test_failed_ipv4_dns_retry_still_stops_after_two_attempts(self):
+        opener, fallback = Mock(), Mock()
+        for transport in (opener, fallback):
+            transport.open.side_effect = c.urllib.error.URLError(c.socket.gaierror(c.socket.EAI_AGAIN, "Temporary failure"))
+        with patch.object(c.urllib.request, "build_opener", side_effect=[opener, fallback]) as build, patch.object(c.time, "sleep") as sleep:
+            with self.assertRaisesRegex(c.SourceError, "Error DNS.*tras 2 intentos"):
+                c.fetch(c.ENFEN_URL)
+        self.assertEqual(build.call_count, 2)
+        self.assertEqual(opener.open.call_count + fallback.open.call_count, 2)
+        sleep.assert_called_once_with(1.0)
+
+    def test_ipv4_connection_keeps_normal_tls_hostname_and_timeout(self):
+        host = "enfen.imarpe.gob.pe"
+        sockaddr = ("192.0.2.10", 443)
+        sock = Mock()
+        answers = [(c.socket.AF_INET, c.socket.SOCK_STREAM, c.socket.IPPROTO_TCP, "", sockaddr)]
+        with patch.object(c.socket, "getaddrinfo", return_value=answers) as resolve, patch.object(c.socket, "socket", return_value=sock), patch.object(c.ssl.SSLContext, "wrap_socket") as wrap:
+            connection = c.IPv4HTTPSConnection(host, timeout=c.TIMEOUT_SECONDS)
+            self.assertTrue(connection._context.check_hostname)
+            self.assertEqual(connection._context.verify_mode, c.ssl.CERT_REQUIRED)
+            connection.connect()
+        resolve.assert_called_once_with(host, 443, c.socket.AF_INET, c.socket.SOCK_STREAM)
+        sock.settimeout.assert_called_once_with(c.TIMEOUT_SECONDS)
+        sock.connect.assert_called_once_with(sockaddr)
+        wrap.assert_called_once_with(sock, server_hostname=host)
+
+    def test_ipv4_handler_constructs_connection_with_python312_arguments(self):
+        handler = c.IPv4HTTPSHandler()
+        request = c.urllib.request.Request(c.ENFEN_URL)
+
+        def initialize(connection_type, req, **kwargs):
+            return connection_type(req.host, timeout=c.TIMEOUT_SECONDS, **kwargs)
+
+        with patch.object(handler, "do_open", side_effect=initialize):
+            connection = handler.https_open(request)
+        self.assertIsInstance(connection, c.IPv4HTTPSConnection)
+        self.assertIs(connection._context, handler._context)
+        self.assertTrue(connection._context.check_hostname)
+        self.assertEqual(connection._context.verify_mode, c.ssl.CERT_REQUIRED)
 
     def test_permanent_dns_error_is_identified_without_retry(self):
         opener = Mock()
         opener.open.side_effect = c.urllib.error.URLError(c.socket.gaierror(c.socket.EAI_NONAME, "Name or service not known"))
-        with patch.object(c.urllib.request, "build_opener", return_value=opener), patch.object(c.time, "sleep") as sleep:
+        with patch.object(c.urllib.request, "build_opener", return_value=opener) as build, patch.object(c.time, "sleep") as sleep:
             with self.assertRaisesRegex(c.SourceError, "Error DNS: nombre no resuelto"):
                 c.fetch(c.ENFEN_URL)
+        self.assertEqual(build.call_count, 1)
         self.assertEqual(opener.open.call_count, 1)
         sleep.assert_not_called()
 
     def test_timeout_is_capped_at_two_attempts_with_useful_error(self):
         opener = Mock()
         opener.open.side_effect = c.urllib.error.URLError(TimeoutError("timed out"))
-        with patch.object(c.urllib.request, "build_opener", return_value=opener), patch.object(c.time, "sleep") as sleep:
+        with patch.object(c.urllib.request, "build_opener", return_value=opener) as build, patch.object(c.time, "sleep") as sleep:
             with self.assertRaisesRegex(c.SourceError, "Tiempo de espera.*tras 2 intentos"):
                 c.fetch(c.ENFEN_URL)
+        self.assertEqual(build.call_count, 1)
         self.assertEqual(opener.open.call_count, 2)
         sleep.assert_called_once_with(1.0)
 
@@ -67,9 +115,10 @@ class TransportTests(unittest.TestCase):
             with self.subTest(status=status):
                 opener = Mock()
                 opener.open.side_effect = c.urllib.error.HTTPError(c.ENFEN_URL, status, "error", {}, None)
-                with patch.object(c.urllib.request, "build_opener", return_value=opener), patch.object(c.time, "sleep") as sleep:
+                with patch.object(c.urllib.request, "build_opener", return_value=opener) as build, patch.object(c.time, "sleep") as sleep:
                     with self.assertRaisesRegex(c.SourceError, f"HTTP {status}"):
                         c.fetch(c.ENFEN_URL)
+                self.assertEqual(build.call_count, 1)
                 self.assertEqual(opener.open.call_count, count)
                 self.assertEqual(sleep.call_count, count - 1)
 
