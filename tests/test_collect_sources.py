@@ -4,9 +4,83 @@ import json
 from pathlib import Path
 import sys
 import unittest
+from unittest.mock import Mock, patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 import collect_sources as c
+
+
+class FakeHtmlResponse:
+    url = c.ENFEN_URL
+    headers = {"Content-Type": "text/html"}
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *args):
+        return False
+
+    def read(self, limit):
+        return b"<html>official source</html>"
+
+
+class TransportTests(unittest.TestCase):
+    def test_tls_verification_failure_is_identified_and_never_retried(self):
+        error = c.urllib.error.URLError(c.ssl.SSLCertVerificationError(1, "certificate verify failed"))
+        opener = Mock()
+        opener.open.side_effect = error
+        with patch.object(c.urllib.request, "build_opener", return_value=opener), patch.object(c.time, "sleep") as sleep:
+            with self.assertRaisesRegex(c.SourceError, "Error TLS.*certificado"):
+                c.fetch(c.ENFEN_URL)
+        self.assertEqual(opener.open.call_count, 1)
+        sleep.assert_not_called()
+
+    def test_temporary_dns_error_gets_one_retry(self):
+        opener = Mock()
+        opener.open.side_effect = [c.urllib.error.URLError(c.socket.gaierror(c.socket.EAI_AGAIN, "Temporary failure")), FakeHtmlResponse()]
+        with patch.object(c.urllib.request, "build_opener", return_value=opener), patch.object(c.time, "sleep") as sleep:
+            value = c.fetch(c.ENFEN_URL)
+        self.assertEqual(value.content_type, "text/html")
+        self.assertEqual(opener.open.call_count, 2)
+        sleep.assert_called_once_with(1.0)
+
+    def test_permanent_dns_error_is_identified_without_retry(self):
+        opener = Mock()
+        opener.open.side_effect = c.urllib.error.URLError(c.socket.gaierror(c.socket.EAI_NONAME, "Name or service not known"))
+        with patch.object(c.urllib.request, "build_opener", return_value=opener), patch.object(c.time, "sleep") as sleep:
+            with self.assertRaisesRegex(c.SourceError, "Error DNS: nombre no resuelto"):
+                c.fetch(c.ENFEN_URL)
+        self.assertEqual(opener.open.call_count, 1)
+        sleep.assert_not_called()
+
+    def test_timeout_is_capped_at_two_attempts_with_useful_error(self):
+        opener = Mock()
+        opener.open.side_effect = c.urllib.error.URLError(TimeoutError("timed out"))
+        with patch.object(c.urllib.request, "build_opener", return_value=opener), patch.object(c.time, "sleep") as sleep:
+            with self.assertRaisesRegex(c.SourceError, "Tiempo de espera.*tras 2 intentos"):
+                c.fetch(c.ENFEN_URL)
+        self.assertEqual(opener.open.call_count, 2)
+        sleep.assert_called_once_with(1.0)
+
+    def test_http_503_gets_one_retry_but_403_does_not(self):
+        for status, count in [(503, 2), (403, 1)]:
+            with self.subTest(status=status):
+                opener = Mock()
+                opener.open.side_effect = c.urllib.error.HTTPError(c.ENFEN_URL, status, "error", {}, None)
+                with patch.object(c.urllib.request, "build_opener", return_value=opener), patch.object(c.time, "sleep") as sleep:
+                    with self.assertRaisesRegex(c.SourceError, f"HTTP {status}"):
+                        c.fetch(c.ENFEN_URL)
+                self.assertEqual(opener.open.call_count, count)
+                self.assertEqual(sleep.call_count, count - 1)
+
+    def test_long_retry_after_is_deferred_instead_of_ignored(self):
+        opener = Mock()
+        opener.open.side_effect = c.urllib.error.HTTPError(c.ENFEN_URL, 429, "rate limit", {"Retry-After": "120"}, None)
+        with patch.object(c.urllib.request, "build_opener", return_value=opener), patch.object(c.time, "sleep") as sleep:
+            with self.assertRaisesRegex(c.SourceError, "HTTP 429.*siguiente ciclo"):
+                c.fetch(c.ENFEN_URL)
+        self.assertEqual(opener.open.call_count, 1)
+        sleep.assert_not_called()
 
 
 class SourceParserTests(unittest.TestCase):

@@ -11,14 +11,19 @@ import argparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass, field
 from datetime import date, datetime, timedelta, timezone
+from email.utils import parsedate_to_datetime
 from html.parser import HTMLParser
 from io import BytesIO
+import errno
 import hashlib
 import json
 import os
 from pathlib import Path
 import re
+import socket
+import ssl
 import sys
+import time
 import unicodedata
 import urllib.error
 import urllib.parse
@@ -39,6 +44,7 @@ ALLOWED_HOSTS = frozenset({
 })
 MAX_BYTES = 8_000_000
 TIMEOUT_SECONDS = 25
+MAX_RETRY_DELAY_SECONDS = 5
 USER_AGENT = "MARTILINE-Global-Control/2.0 (public-source monitor; hourly)"
 SOURCE_META = {
     "acp-gatun": ("ACP · Indicadores de Gatún", GATUN_URL),
@@ -87,34 +93,102 @@ class Response:
     content_type: str
 
 
+def network_failure(exc: Exception) -> tuple[str, bool]:
+    """Classify urllib's underlying cause without exposing URLs or credentials."""
+    reason = exc.reason if isinstance(exc, urllib.error.URLError) else exc
+    if isinstance(reason, ssl.SSLCertVerificationError):
+        code = getattr(reason, "verify_code", None)
+        detail = clean(str(getattr(reason, "verify_message", "certificado no verificable")))
+        detail = re.sub(r"https?://\S+", "[URL omitida]", detail)[:120]
+        return f"Error TLS: validación del certificado fallida (código {code if code is not None else 'no disponible'}: {detail})", False
+    if isinstance(reason, ssl.SSLError):
+        detail = re.sub(r"[^A-Za-z0-9_ -]", "", str(getattr(reason, "reason", "handshake")))[:80]
+        return f"Error TLS durante la conexión ({detail})", False
+    if isinstance(reason, socket.gaierror):
+        temporary = reason.errno == socket.EAI_AGAIN
+        label = "resolución temporal no disponible" if temporary else "nombre no resuelto"
+        return f"Error DNS: {label} (código {reason.errno})", temporary
+    if isinstance(reason, (TimeoutError, socket.timeout)) or getattr(reason, "errno", None) == errno.ETIMEDOUT:
+        return f"Tiempo de espera de red agotado ({TIMEOUT_SECONDS} s por intento)", True
+    if isinstance(reason, OSError):
+        code = reason.errno
+        transient = code in {errno.ECONNRESET, errno.ECONNABORTED, errno.ECONNREFUSED,
+                             errno.ENETUNREACH, errno.EHOSTUNREACH, errno.EPIPE}
+        label = errno.errorcode.get(code, "sin código") if code is not None else type(reason).__name__
+        return f"Error de conexión de red ({label})", transient
+    # Some urllib handlers wrap a string rather than an exception object.
+    if isinstance(reason, str):
+        lowered = reason.lower()
+        if "timed out" in lowered or "timeout" in lowered:
+            return f"Tiempo de espera de red agotado ({TIMEOUT_SECONDS} s por intento)", True
+        if "temporary failure in name resolution" in lowered:
+            return "Error DNS: resolución temporal no disponible", True
+        if "name or service not known" in lowered or "nodename nor servname" in lowered:
+            return "Error DNS: nombre no resuelto", False
+        if "certificate" in lowered or "ssl" in lowered or "tls" in lowered:
+            return "Error TLS: no se pudo validar o establecer la conexión segura", False
+    return f"Error de conexión no clasificado ({type(reason).__name__})", False
+
+
+def retry_delay(headers) -> float | None:
+    """Respect Retry-After. Long waits are deferred to the next hourly cycle."""
+    value = headers.get("Retry-After") if headers else None
+    if not value:
+        return 1.0
+    try:
+        seconds = float(value)
+    except (ValueError, TypeError):
+        try:
+            when = parsedate_to_datetime(value)
+            if when.tzinfo is None:
+                when = when.replace(tzinfo=timezone.utc)
+            seconds = (when - datetime.now(timezone.utc)).total_seconds()
+        except (ValueError, TypeError, OverflowError):
+            return 1.0
+    return max(1.0, seconds) if seconds <= MAX_RETRY_DELAY_SECONDS else None
+
+
 def fetch(url: str, kind: str = "html", max_bytes: int = MAX_BYTES) -> Response:
-    """One bounded public GET. No cookies, login, browser, keys or paid proxy."""
+    """Bounded public GET, with one retry only for a classified transient error."""
     public_url(url)
     accept = "application/pdf" if kind == "pdf" else "text/html,application/xhtml+xml"
     request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": accept})
     opener = urllib.request.build_opener(OfficialRedirects())
-    try:
-        with opener.open(request, timeout=TIMEOUT_SECONDS) as response:
-            public_url(response.url)
-            mime = (response.headers.get("Content-Type") or "").split(";", 1)[0].lower().strip()
-            length = response.headers.get("Content-Length")
-            if length and length.isdigit() and int(length) > max_bytes:
-                raise SourceError("La respuesta supera el límite de descarga")
-            body = response.read(max_bytes + 1)
-            if len(body) > max_bytes:
-                raise SourceError("La respuesta supera el límite de descarga")
-            if kind == "pdf":
-                if mime not in ("application/pdf", "application/octet-stream") or not body.startswith(b"%PDF-"):
-                    raise SourceError("La descarga no contiene un PDF válido")
-            elif mime not in ("text/html", "application/xhtml+xml") or not body.strip():
-                raise SourceError("La respuesta no contiene HTML válido")
-            return Response(body, response.url, mime)
-    except SourceError:
-        raise
-    except urllib.error.HTTPError as exc:
-        raise SourceError(f"La fuente respondió HTTP {exc.code}") from exc
-    except (urllib.error.URLError, TimeoutError, OSError) as exc:
-        raise SourceError(f"No se pudo consultar la fuente ({type(exc).__name__})") from exc
+    for attempt in range(2):
+        try:
+            with opener.open(request, timeout=TIMEOUT_SECONDS) as response:
+                public_url(response.url)
+                mime = (response.headers.get("Content-Type") or "").split(";", 1)[0].lower().strip()
+                length = response.headers.get("Content-Length")
+                if length and length.isdigit() and int(length) > max_bytes:
+                    raise SourceError("La respuesta supera el límite de descarga")
+                body = response.read(max_bytes + 1)
+                if len(body) > max_bytes:
+                    raise SourceError("La respuesta supera el límite de descarga")
+                if kind == "pdf":
+                    if mime not in ("application/pdf", "application/octet-stream") or not body.startswith(b"%PDF-"):
+                        raise SourceError("La descarga no contiene un PDF válido")
+                elif mime not in ("text/html", "application/xhtml+xml") or not body.strip():
+                    raise SourceError("La respuesta no contiene HTML válido")
+                return Response(body, response.url, mime)
+        except SourceError:
+            raise
+        except urllib.error.HTTPError as exc:
+            cause = exc
+            message = f"La fuente respondió HTTP {exc.code}"
+            retry = exc.code in (429, 502, 503, 504)
+            delay = retry_delay(exc.headers) if retry else None
+            if retry and delay is None:
+                message += ". Retry-After excede la espera permitida; se intentará en el siguiente ciclo"
+        except (urllib.error.URLError, TimeoutError, OSError) as exc:
+            cause = exc
+            message, retry = network_failure(exc)
+            delay = 1.0 if retry else None
+        if attempt == 1 or not retry or delay is None:
+            suffix = " tras 2 intentos" if attempt == 1 else ""
+            host = urllib.parse.urlsplit(url).hostname
+            raise SourceError(f"{host}: {message}{suffix}") from cause
+        time.sleep(delay)
 
 
 @dataclass
