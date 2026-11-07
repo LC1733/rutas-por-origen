@@ -1,0 +1,97 @@
+name: Actualizar fuentes públicas
+
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/actualizar-fuentes.yml'
+      - 'scripts/**'
+      - 'tests/**'
+      - 'requirements.txt'
+      - 'index.html'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: actualizar-fuentes-main
+  cancel-in-progress: false
+
+jobs:
+  consultar:
+    if: github.repository == 'LC1733/rutas-por-origen' && github.ref == 'refs/heads/main' && github.event.repository.visibility == 'public'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    env:
+      PYTHONUNBUFFERED: '1'
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - name: Obtener la versión de main
+        # actions/checkout v7.0.1, release oficial verificada el 7-nov-2026.
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: main
+          fetch-depth: 1
+          persist-credentials: true
+
+      - name: Preparar Python
+        # actions/setup-python v7.1.0, release oficial verificada el 7-nov-2026.
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
+        with:
+          python-version: '3.12'
+
+      - name: Instalar dependencias del recolector
+        run: python -m pip install --disable-pip-version-check --no-cache-dir -r requirements.txt
+
+      - name: Comprobar el tratamiento de las fuentes
+        run: python -m unittest discover -s tests -p 'test_*.py' -v
+
+      - name: Consultar las fuentes públicas
+        # GitHub proporciona GITHUB_SERVER_URL, GITHUB_REPOSITORY y GITHUB_RUN_ID.
+        # El recolector puede conservar el enlace a esta ejecución en el snapshot.
+        run: python scripts/collect_sources.py
+
+      - name: Guardar únicamente el snapshot de consultas
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f data/live.json
+          python -m json.tool data/live.json > /dev/null
+          git add -- data/live.json
+
+          if git diff --cached --quiet; then
+            printf '%s\n' 'La consulta no produjo cambios en data/live.json.' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          base_sha="$(git rev-parse HEAD)"
+          git fetch --no-tags origin main
+          remote_sha="$(git rev-parse FETCH_HEAD)"
+
+          if [ "$remote_sha" != "$base_sha" ]; then
+            printf '%s\n' '::error::main cambió durante la consulta. El snapshot no se publicó para preservar esos cambios. Ejecuta nuevamente el workflow.'
+            printf '%s\n' 'No se publicó data/live.json porque main avanzó durante esta ejecución. La próxima consulta partirá de la nueva versión.' >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+
+          git config user.name 'MARTILINE Actualizaciones'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Actualizar consulta de fuentes públicas'
+
+          if ! git push origin HEAD:refs/heads/main; then
+            printf '%s\n' '::error::No se pudo publicar el snapshot. No se forzó ni reescribió la rama. Revisa el error de Git y vuelve a ejecutar el workflow.'
+            exit 1
+          fi
+
+          printf '%s\n' 'Snapshot de consultas publicado en data/live.json.' >> "$GITHUB_STEP_SUMMARY"
+          printf 'Ejecución: %s/%s/actions/runs/%s\n' "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Dejar constancia de una ejecución incompleta
+        if: failure()
+        shell: bash
+        run: |
+          printf '%s\n' 'La ejecución no terminó correctamente. El dashboard debe evaluar la fecha del último snapshot disponible; este resultado no acredita una nueva verificación de las fuentes.' >> "$GITHUB_STEP_SUMMARY"

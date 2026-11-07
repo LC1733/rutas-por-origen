@@ -1,0 +1,1965 @@
+{
+  "meta": {
+    "auditedAt": "2026-11-07",
+    "timezone": "America/Santiago",
+    "version": "1.0"
+  },
+  "sources": [
+    {
+      "id": "acp-advisories",
+      "number": 1,
+      "title": "ACP — Advisory to Shipping, índice 2026",
+      "shortName": "ACP",
+      "publisher": "Autoridad del Canal de Panamá",
+      "url": "https://pancanal.com/en/maritime-services/advisory-to-shipping/",
+      "publishedAt": null,
+      "dateNote": "Fecha de publicación no visible; consulta del 7-nov-2026.",
+      "summary": "El índice consultado llega al aviso A-40-2026 y enlaza A-36, A-39 y A-29.",
+      "coverage": "Índice de avisos oficiales consultado; no garantiza ausencia de una publicación posterior fuera del índice.",
+      "category": "Canal",
+      "access": "Consulta pública sin pago. Documento o página oficial leídos; vigencia y alcance según ficha."
+    },
+    {
+      "id": "acp-a36",
+      "number": 2,
+      "title": "ACP A-36-2026 — Cupos Neopanamax, calado y reservas",
+      "shortName": "ACP",
+      "publisher": "Autoridad del Canal de Panamá",
+      "url": "https://pancanal.com/wp-content/uploads/2026/04/ADV-36-2026-Increase-in-the-Number-of-Neopanamax-Booking-Slots-Draft-Adjustment-and-Transit-Reservation-System.pdf",
+      "publishedAt": "2026-09-28",
+      "dateNote": "",
+      "summary": "Establece 10 cupos Neopanamax y 33 cupos totales diarios de reserva desde 15-oct-2026; calado máximo Neopanamax 14,94 m (49,0 pies) hasta nuevo aviso.",
+      "coverage": "PDF oficial, fecha interna 28-sep-2026. La carpeta URL /2026/04 y el título técnico del PDF no son la fecha de emisión. Cupos de reserva no equivalen a tránsitos diarios realizados.",
+      "category": "Canal",
+      "access": "Consulta pública sin pago. Documento o página oficial leídos; vigencia y alcance según ficha."
+    },
+    {
+      "id": "acp-a39",
+      "number": 3,
+      "title": "ACP A-39-2026 — Modificaciones al sistema de reservas",
+      "shortName": "ACP",
+      "publisher": "Autoridad del Canal de Panamá",
+      "url": "https://pancanal.com/wp-content/uploads/2026/10/ADV-39-2026-Modifications-to-the-Transit-Reservation-Booking-System.pdf",
+      "publishedAt": "2026-10-21",
+      "dateNote": "",
+      "summary": "Restablece reservas de último minuto Panamax; señala persistencia del déficit hídrico y riesgo de demoras extensas sin reserva.",
+      "coverage": "Confirma condiciones de reserva y déficit; no establece un nuevo calado máximo.",
+      "category": "Canal",
+      "access": "Consulta pública sin pago. Documento o página oficial leídos; vigencia y alcance según ficha."
+    },
+    {
+      "id": "acp-a40",
+      "number": 4,
+      "title": "ACP A-40-2026 — Requisitos NetZero y cambios de reservas",
+      "shortName": "ACP",
+      "publisher": "Autoridad del Canal de Panamá",
+      "url": "https://pancanal.com/wp-content/uploads/2026/10/ADV-40-2026-Updated-NetZero-Slot-Eligibility-Requirements.pdf",
+      "publishedAt": "2026-10-30",
+      "dateNote": "",
+      "summary": "Actualiza elegibilidad NetZero desde 1-nov y asignación de cupos cancelados Neopanamax. Reitera déficit hídrico y necesidad de reserva para garantizar fecha.",
+      "coverage": "Último aviso del índice revisado. No modifica en el texto los 49 pies ni los 33 cupos fijados en A-36.",
+      "category": "Canal",
+      "access": "Consulta pública sin pago. Documento o página oficial leídos; vigencia y alcance según ficha."
+    },
+    {
+      "id": "acp-a29",
+      "number": 5,
+      "title": "ACP A-29-2026 — Medidas por precipitaciones reducidas",
+      "shortName": "ACP",
+      "publisher": "Autoridad del Canal de Panamá",
+      "url": "https://pancanal.com/wp-content/uploads/2026/08/ADV-29-2026-Additional-Measures-to-Address-Reduced-Precipitation-in-the-Canal-Watershed.pdf",
+      "publishedAt": "2026-08-20",
+      "dateNote": "",
+      "summary": "Documenta déficit hidrológico y preocupación por disponibilidad de agua durante enero–abril de 2027.",
+      "coverage": "Contexto histórico de riesgo; sus cupos y ajustes anteriores no deben sustituir los avisos posteriores. No acredita un calado futuro obligatorio de 44 pies.",
+      "category": "Canal",
+      "access": "Consulta pública sin pago. Documento o página oficial leídos; vigencia y alcance según ficha."
+    },
+    {
+      "id": "acp-gatun-20261107",
+      "number": 6,
+      "title": "ACP — Gatun Water Indicators, 7-nov-2026",
+      "shortName": "ACP",
+      "publisher": "Autoridad del Canal de Panamá",
+      "url": "https://evtms-rpts.pancanal.com/eng/h2o/GatunWaterIndicators.pdf",
+      "publishedAt": "2026-11-07",
+      "dateNote": "",
+      "summary": "PDF diario fechado 7-nov-2026: nivel oficial Gatún 87,1 pies y calado oficial Neopanamax 49,0 pies; Panamax 39,5 pies.",
+      "coverage": "La misma URL cambia con el tiempo. Los calados proyectados son estimaciones; el propio PDF remite a los avisos oficiales para límites autorizados.",
+      "category": "Canal",
+      "access": "Consulta pública sin pago. Documento o página oficial leídos; vigencia y alcance según ficha."
+    },
+    {
+      "id": "acp-gatun-index",
+      "number": 7,
+      "title": "ACP — Gatun Water Level Indicators, recursos públicos",
+      "shortName": "ACP",
+      "publisher": "Autoridad del Canal de Panamá",
+      "url": "https://evtms-rpts.pancanal.com/eng/h2o/index.html",
+      "publishedAt": null,
+      "dateNote": "Fecha de publicación no visible; consulta del 7-nov-2026.",
+      "summary": "La página anuncia dashboard, PDF diario, niveles históricos CSV y proyecciones CSV.",
+      "coverage": "PDF leído. Los endpoints CSV y su descarga automática no fueron verificados. No constituye una API documentada comprobada.",
+      "category": "Canal",
+      "access": "Consulta pública sin pago. Documento o página oficial leídos; vigencia y alcance según ficha."
+    },
+    {
+      "id": "noaa-enso-20261008",
+      "number": 8,
+      "title": "NOAA CPC — ENSO Diagnostic Discussion, 8 October 2026",
+      "shortName": "NOAA CPC",
+      "publisher": "NOAA Climate Prediction Center / NCEP / NWS",
+      "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_disc_oct2026/ensodisc.shtml",
+      "publishedAt": "2026-10-08",
+      "dateNote": "",
+      "summary": "Informa Niño 1+2 de +3,9 °C y un escenario fuerte a muy fuerte con probabilidad superior al 83% hasta enero–marzo de 2027. Próxima discusión mensual: 12-nov-2026.",
+      "coverage": "Valores del informe mensual de octubre, no mediciones nuevas del 7-nov. El texto distingue probabilidad climática de impactos locales; no garantiza cierres portuarios.",
+      "category": "Clima",
+      "access": "Consulta pública sin pago. Documento o página oficial leídos; vigencia y alcance según ficha."
+    },
+    {
+      "id": "enfen18",
+      "number": 9,
+      "title": "ENFEN — Comunicado Oficial N.º 18-2026",
+      "shortName": "ENFEN",
+      "publisher": "Comisión Multisectorial ENFEN",
+      "url": "https://enfen.imarpe.gob.pe/download/comunicado-oficial-enfen-n-18-2026/",
+      "publishedAt": "2026-10-16",
+      "dateNote": "",
+      "summary": "Pronosticaba magnitud extraordinaria del Niño costero hasta enero de 2027.",
+      "coverage": "Respalda el contenido histórico del HTML; reemplazado para seguimiento por comunicado 19 del 30-oct.",
+      "category": "Clima",
+      "access": "Consulta pública sin pago. Documento o página oficial leídos; vigencia y alcance según ficha."
+    },
+    {
+      "id": "enfen19",
+      "number": 10,
+      "title": "ENFEN — Comunicado Oficial N.º 19-2026",
+      "shortName": "ENFEN",
+      "publisher": "Comisión Multisectorial ENFEN",
+      "url": "https://enfen.imarpe.gob.pe/download/comunicado-oficial-enfen-n-19-2026/",
+      "publishedAt": "2026-10-30",
+      "dateNote": "",
+      "summary": "Proyecta magnitud extraordinaria del Niño costero hasta febrero de 2027 y descenso gradual posterior. Prevé lluvias superiores a lo normal en costa norte y central; próxima publicación 13-nov.",
+      "coverage": "Se abrió también el PDF oficial. Es un pronóstico regional, no una constatación de cierre de una carretera o puerto concreto.",
+      "category": "Clima",
+      "access": "Consulta pública sin pago. Documento o página oficial leídos; vigencia y alcance según ficha."
+    },
+    {
+      "id": "dhn-avisos",
+      "number": 11,
+      "title": "DHN — Avisos especiales de oleaje, aviso 46-26",
+      "shortName": "DHN",
+      "publisher": "Dirección de Hidrografía y Navegación, Marina de Guerra del Perú",
+      "url": "https://www.dhn.mil.pe/portal/avisos-especiales",
+      "publishedAt": "2026-11-03",
+      "dateNote": "",
+      "summary": "Aviso 46-26 válido del 3 al 8-nov-2026: oleaje del suroeste con variaciones por tramo costero. El mismo archivo contiene el aviso 42-26, válido 20–25-oct, y posteriores.",
+      "coverage": "La página es un archivo dinámico de avisos. Pronostica oleaje; no prueba por sí misma que Callao o Chancay estén cerrados o abiertos.",
+      "category": "Clima",
+      "access": "Consulta pública sin pago. Documento o página oficial leídos; vigencia y alcance según ficha."
+    },
+    {
+      "id": "dicapi-status",
+      "number": 12,
+      "title": "DICAPI — Estado de Puertos",
+      "shortName": "DICAPI",
+      "publisher": "Dirección General de Capitanías y Guardacostas, Marina de Guerra del Perú",
+      "url": "https://www.dicapi.mil.pe/estado-de-puertos",
+      "publishedAt": null,
+      "dateNote": "Fecha de publicación no visible; consulta del 7-nov-2026.",
+      "summary": "Portal oficial consultado de forma interactiva. Se pudieron leer resúmenes y registros de Callao y Chancay; la observación no acredita un estado agregado vigente para todos sus terminales.",
+      "coverage": "Callao: resumen de 8 abiertos, frente a un registro superior de cierre parcial para Bahía del Callao (rada y Muelle Grau). Chancay: resumen de 2 abiertos, 2 parciales y 2 cerrados; muelles 1/2 en rojo y 3/4 en verde. El alcance y la vigencia deben conciliarse por terminal y resolución. Las dos resoluciones PDF enlazadas no se pudieron abrir. API pública documentada no localizada.",
+      "category": "Puertos",
+      "access": "Consulta interactiva del portal completada; dos PDF enlazados no leídos"
+    },
+    {
+      "id": "andina-84-20261023",
+      "number": 13,
+      "title": "Andina — Oleajes anómalos: 84 puertos permanecen cerrados",
+      "shortName": "Andina",
+      "publisher": "Agencia Peruana de Noticias Andina, con vocero de DHN y reporte COEN/INDECI",
+      "url": "https://andina.pe/agencia/noticia-oleajes-anomalos-84-puertos-permanecen-cerrados-el-litoral-peruano-1097093.aspx",
+      "publishedAt": "2026-10-23",
+      "dateNote": "",
+      "summary": "Reportó 84 instalaciones cerradas el 23-oct: 36 en litoral norte y 48 en centro, sin cierres reportados en sur para ese corte.",
+      "coverage": "Prensa estatal con declaraciones directas y reporte oficial citado. Evidencia histórica del 23-oct, no estado vigente el 7-nov ni una lista verificada de terminales.",
+      "category": "Puertos",
+      "access": "Consulta pública sin pago. Documento o página oficial leídos; vigencia y alcance según ficha."
+    },
+    {
+      "id": "dicapi-callao-rc269-link",
+      "number": 14,
+      "title": "DICAPI — resolución enlazada RC 269-2026, Bahía del Callao",
+      "shortName": "DICAPI",
+      "publisher": "Dirección General de Capitanías y Guardacostas, Marina de Guerra del Perú",
+      "url": "https://www.dicapi.mil.pe/storage/state-ports/6819cb52-189e-4596-af64-3825ad55d0f0.pdf",
+      "publishedAt": null,
+      "dateNote": "El registro del portal muestra 31-oct-2026, 09:00; zona horaria no identificada. PDF no leído.",
+      "summary": "Enlace observado desde el registro de Bahía del Callao (rada y Muelle Grau). La fila superior mostraba cierre parcial, nivel III, RC 269-2026/MGP/DICAPI/CO.",
+      "coverage": "Se verificó el enlace y la información mostrada por el portal, no el contenido, vigencia ni alcance jurídico del PDF. No atribuir a toda Callao este estado.",
+      "category": "Puertos",
+      "access": "Enlace oficial observado; apertura del PDF no completada"
+    },
+    {
+      "id": "dicapi-chancay-rc085-link",
+      "number": 15,
+      "title": "DICAPI — resolución enlazada RC 085-2026, muelle 3 Chancay",
+      "shortName": "DICAPI",
+      "publisher": "Dirección General de Capitanías y Guardacostas, Marina de Guerra del Perú",
+      "url": "https://www.dicapi.mil.pe/storage/state-ports/ad4ac3fe-4e43-4839-9a47-e2763f651f92.pdf",
+      "publishedAt": null,
+      "dateNote": "El registro del portal muestra 25-oct-2026, 17:30; zona horaria no identificada. PDF no leído.",
+      "summary": "Enlace observado al consultar el muelle 3. La fila superior mostraba puerto abierto, nivel I, RC 085-2026/MGP/DICAPI/CY.",
+      "coverage": "Se verificó el enlace y la información mostrada por el portal, no el contenido, vigencia ni alcance jurídico del PDF. No atribuir a todo Chancay este estado.",
+      "category": "Puertos",
+      "access": "Enlace oficial observado; apertura del PDF no completada"
+    },
+    {
+      "id": "atl-swx",
+      "number": 16,
+      "title": "SWX: actualización de rotación desde junio de 2025",
+      "shortName": "Hapag-Lloyd",
+      "publisher": "Hapag-Lloyd",
+      "url": "https://www.hapag-lloyd.com/es/services-information/news/2025/05/shipping-with-our-south-america-westcoast-service-heres-an-updat.html",
+      "publishedAt": "2025-05-28",
+      "dateNote": "",
+      "summary": "La rotación publicada une Rotterdam y otros puertos del norte de Europa con Callao. La retirada de Manzanillo, Panamá, se limita al sentido norte; el recorrido sur lo conserva. Revalidar itinerario por viaje.",
+      "coverage": "Alcance limitado al documento y su fecha. La rotación publicada une Rotterdam y otros puertos del norte de Europa con Callao. La retirada de Manzanillo, Panamá, se limita al sentido norte; el recorrido sur lo conserva. Revalidar itinerario por viaje.",
+      "category": "Navieras",
+      "access": "Consulta pública sin pago. Documento abierto; fecha visible en resultado oficial indexado"
+    },
+    {
+      "id": "atl-msw",
+      "number": 17,
+      "title": "MSW incorpora Callao: primera escala anunciada el 18 de abril de 2026",
+      "shortName": "Hapag-Lloyd",
+      "publisher": "Hapag-Lloyd",
+      "url": "https://www.hapag-lloyd.com/es/services-information/news/2026/03/shipping-with-our-msw-service--here-s-an-update-for-your-cargo-p.headless.html",
+      "publishedAt": null,
+      "dateNote": "Aviso de marzo de 2026; día de publicación no expuesto. Primera escala anunciada: 18-04-2026.",
+      "summary": "Confirma el enlace Mediterráneo–Callao y la exposición al Canal. Una conexión desde Rotterdam al Mediterráneo requiere validar el tramo adicional y el transbordo; no constituye una alternativa sin Panamá.",
+      "coverage": "Alcance limitado al documento y su fecha. Confirma el enlace Mediterráneo–Callao y la exposición al Canal. Una conexión desde Rotterdam al Mediterráneo requiere validar el tramo adicional y el transbordo; no constituye una alternativa sin Panamá.",
+      "category": "Navieras",
+      "access": "Consulta pública sin pago. Documento abierto"
+    },
+    {
+      "id": "atl-pcrc",
+      "number": 18,
+      "title": "APM Terminals adquiere Panama Canal Railway Company",
+      "shortName": "APM Terminals",
+      "publisher": "APM Terminals",
+      "url": "https://www2.apmterminals.com/en/news/news-releases/2025/250402-apm-terminals-acquires-panama-canal-railway-co",
+      "publishedAt": "2025-04-02",
+      "dateNote": "",
+      "summary": "Confirma la adquisición y una infraestructura ferroviaria de 76 km para movimiento de carga entre ambos océanos. No acredita cupos, tránsito integral ni una conexión contratada desde Europa o USA hacia Perú.",
+      "coverage": "Alcance limitado al documento y su fecha. Confirma la adquisición y una infraestructura ferroviaria de 76 km para movimiento de carga entre ambos océanos. No acredita cupos, tránsito integral ni una conexión contratada desde Europa o USA hacia Perú.",
+      "category": "Terrestre",
+      "access": "Consulta pública sin pago. Documento abierto"
+    },
+    {
+      "id": "atl-ecx",
+      "number": 19,
+      "title": "ECX: cambio de rotación desde el 13 de marzo de 2026",
+      "shortName": "Hapag-Lloyd",
+      "publisher": "Hapag-Lloyd",
+      "url": "https://www.hapag-lloyd.com/es/services-information/news/2026/02/shipping-with-our-ecx-service--here-s-a-rotation-update.html",
+      "publishedAt": null,
+      "dateNote": "Aviso de febrero de 2026; día de publicación no expuesto. Cambio efectivo: 13-03-2026.",
+      "summary": "Publica un servicio Europa–costa este sudamericana que incluye Rotterdam y Santos/Itapoá. Sirve como evidencia del primer tramo de una alternativa vía Brasil; la conexión con CON debe cotizarse y confirmarse.",
+      "coverage": "Alcance limitado al documento y su fecha. Publica un servicio Europa–costa este sudamericana que incluye Rotterdam y Santos/Itapoá. Sirve como evidencia del primer tramo de una alternativa vía Brasil; la conexión con CON debe cotizarse y confirmarse.",
+      "category": "Navieras",
+      "access": "Consulta pública sin pago. Documento abierto"
+    },
+    {
+      "id": "atl-con",
+      "number": 20,
+      "title": "CON: ajuste temporal de escalas chilenas desde el 3 de agosto de 2026",
+      "shortName": "Hapag-Lloyd",
+      "publisher": "Hapag-Lloyd",
+      "url": "https://www.hapag-lloyd.com/en/services-information/offices-localinfo/local-news/2026/07/shipping-to-or-from-chile--here-s-a-temporary-adjustment-for-our.html",
+      "publishedAt": null,
+      "dateNote": "Aviso de julio de 2026; día de publicación no expuesto. Inicio del ajuste: 03-08-2026.",
+      "summary": "La rotación incluye puertos brasileños, San Antonio y Callao. La frecuencia quincenal mencionada corresponde a Antofagasta/Puerto Angamos; no demuestra que Callao sea quincenal ni que todo CON tenga esa frecuencia.",
+      "coverage": "Alcance limitado al documento y su fecha. La rotación incluye puertos brasileños, San Antonio y Callao. La frecuencia quincenal mencionada corresponde a Antofagasta/Puerto Angamos; no demuestra que Callao sea quincenal ni que todo CON tenga esa frecuencia.",
+      "category": "Navieras",
+      "access": "Consulta pública sin pago. Documento abierto"
+    },
+    {
+      "id": "atl-intra",
+      "number": 21,
+      "title": "Red Intra Americas de Hapag-Lloyd",
+      "shortName": "Hapag-Lloyd",
+      "publisher": "Hapag-Lloyd",
+      "url": "https://www.hapag-lloyd.com/de/services-information/routes-trades/trades/irt-americas.html",
+      "publishedAt": null,
+      "dateNote": "Página de producto sin fecha de publicación visible",
+      "summary": "Describe CON por el Estrecho de Magallanes y las conexiones México Pacífico–costa oeste sudamericana. Publica servicios regionales, sin garantizar espacio ni tránsito de una operación particular.",
+      "coverage": "Alcance limitado al documento y su fecha. Describe CON por el Estrecho de Magallanes y las conexiones México Pacífico–costa oeste sudamericana. Publica servicios regionales, sin garantizar espacio ni tránsito de una operación particular.",
+      "category": "Navieras",
+      "access": "Consulta pública sin pago. Documento abierto"
+    },
+    {
+      "id": "atl-amerxl",
+      "number": 22,
+      "title": "Ficha de servicio Americas XL (AMERXL)",
+      "shortName": "CMA CGM",
+      "publisher": "CMA CGM",
+      "url": "https://www.cma-cgm.com/ebusiness/schedules/line-services/flyer/AMERXL",
+      "publishedAt": null,
+      "dateNote": "Ficha de producto sin fecha visible; consulta del 07-11-2026",
+      "summary": "Publica frecuencia semanal y una secuencia sur desde Port Everglades, Filadelfia y Nueva York hasta Cartagena, Guayaquil y Callao. Los días de la ficha son orientativos y no sustituyen el itinerario del viaje.",
+      "coverage": "Alcance limitado al documento y su fecha. Publica frecuencia semanal y una secuencia sur desde Port Everglades, Filadelfia y Nueva York hasta Cartagena, Guayaquil y Callao. Los días de la ficha son orientativos y no sustituyen el itinerario del viaje.",
+      "category": "Navieras",
+      "access": "Consulta pública sin pago. Documento abierto"
+    },
+    {
+      "id": "atl-amerxl-schedule",
+      "number": 23,
+      "title": "Itinerarios AMERXL con escalas de octubre y noviembre de 2026",
+      "shortName": "CMA CGM",
+      "publisher": "CMA CGM",
+      "url": "https://www.cma-cgm.com/ebusiness/schedules/line-services/schedules/AMERXL",
+      "publishedAt": null,
+      "dateNote": "Contenido dinámico; muestra viajes de octubre/noviembre de 2026 en el índice consultado",
+      "summary": "La consulta indexada muestra el paso por Panamá y omisiones de Callao en algunos viajes. La apertura directa no expone toda la tabla dinámica: el próximo embarque debe confirmarse en el buscador de la naviera.",
+      "coverage": "Alcance limitado al documento y su fecha. La consulta indexada muestra el paso por Panamá y omisiones de Callao en algunos viajes. La apertura directa no expone toda la tabla dinámica: el próximo embarque debe confirmarse en el buscador de la naviera.",
+      "category": "Navieras",
+      "access": "Fuente pública localizada en índice; apertura directa limitada. Tabla recuperada por búsqueda; apertura directa mostró solo interfaz y condiciones"
+    },
+    {
+      "id": "atl-wcca-2024",
+      "number": 24,
+      "title": "Cobertura WCCA2 de la costa oeste americana",
+      "shortName": "Maersk",
+      "publisher": "Maersk",
+      "url": "https://www.maersk.com/de-de/news/articles/2024/05/13/west-coast-america-coverage",
+      "publishedAt": "2024-05-13",
+      "dateNote": "",
+      "summary": "Publica una conexión Los Ángeles/Port Hueneme–Centroamérica–Balboa. Es antecedente histórico, modificado posteriormente; no usar sus escalas ni tránsitos de 2024 como itinerario vigente.",
+      "coverage": "Alcance limitado al documento y su fecha. Publica una conexión Los Ángeles/Port Hueneme–Centroamérica–Balboa. Es antecedente histórico, modificado posteriormente; no usar sus escalas ni tránsitos de 2024 como itinerario vigente.",
+      "category": "Navieras",
+      "access": "Consulta pública sin pago. Documento abierto"
+    },
+    {
+      "id": "atl-wcca-2026",
+      "number": 25,
+      "title": "Maersk North America Market Update — February 2026",
+      "shortName": "Maersk",
+      "publisher": "Maersk",
+      "url": "https://www.maersk.com/news/articles/2026/02/06/north-america-market-update-february",
+      "publishedAt": "2026-02-06",
+      "dateNote": "",
+      "summary": "Informa la retirada de Manzanillo, México, de WCCA2; menciona Peru Feeder y otros servicios del Pacífico. La continuidad de una conexión USA–Perú debe confirmarse por viaje, puerto de transbordo y ventana operativa.",
+      "coverage": "Alcance limitado al documento y su fecha. Informa la retirada de Manzanillo, México, de WCCA2; menciona Peru Feeder y otros servicios del Pacífico. La continuidad de una conexión USA–Perú debe confirmarse por viaje, puerto de transbordo y ventana operativa.",
+      "category": "Navieras",
+      "access": "Consulta pública sin pago. Documento abierto"
+    },
+    {
+      "id": "atl-ax4",
+      "number": 26,
+      "title": "AX4: nuevas escalas y terminales desde abril de 2026",
+      "shortName": "ONE",
+      "publisher": "Ocean Network Express (ONE)",
+      "url": "https://www.one-line.com/en/local-information/mx/news/ax4-update-one-announces-enhancement-new-port-calls-and-terminal",
+      "publishedAt": "2026-04-06",
+      "dateNote": "",
+      "summary": "La publicación oficial indexada anuncia frecuencia semanal y la secuencia Ensenada–Lázaro Cárdenas–Manzanillo–Callao; terminal DP World en Callao. La apertura directa devuelve 403, por lo que se declara esta limitación de recuperación.",
+      "coverage": "Alcance limitado al documento y su fecha. La publicación oficial indexada anuncia frecuencia semanal y la secuencia Ensenada–Lázaro Cárdenas–Manzanillo–Callao; terminal DP World en Callao. La apertura directa devuelve 403, por lo que se declara esta limitación de recuperación.",
+      "category": "Navieras",
+      "access": "Fuente pública localizada en índice; apertura directa limitada. Contenido oficial recuperado por buscador; apertura directa 403"
+    },
+    {
+      "id": "atl-gulf-saec",
+      "number": 27,
+      "title": "MSC incorpora Suape al servicio Gulf to SAEC I",
+      "shortName": "MSC",
+      "publisher": "MSC",
+      "url": "https://www.msc.com/tr/newsroom/customer-advisories/2026/october/msc-strengthens-northeast-brazil-connectivity-with-new-suape-port-call",
+      "publishedAt": "2026-10-12",
+      "dateNote": "El buscador usa 12/10/2026 y la página cambia el orden al formatear; octubre y anuncio de escala del 26-oct confirman 12 de octubre.",
+      "summary": "Rotación publicada con Santos/Río de Janeiro–Cartagena y primera nueva escala en Suape prevista para el 26 de octubre. Respalda un tramo Brasil–Cartagena; el enlace a Callao es una conexión adicional a confirmar.",
+      "coverage": "Alcance limitado al documento y su fecha. Rotación publicada con Santos/Río de Janeiro–Cartagena y primera nueva escala en Suape prevista para el 26 de octubre. Respalda un tramo Brasil–Cartagena; el enlace a Callao es una conexión adicional a confirmar.",
+      "category": "Navieras",
+      "access": "Consulta pública sin pago. Documento abierto"
+    },
+    {
+      "id": "atl-sat",
+      "number": 28,
+      "title": "SAT retira Santos y pasa a utilizar Paranaguá",
+      "shortName": "Hapag-Lloyd",
+      "publisher": "Hapag-Lloyd",
+      "url": "https://www.hapag-lloyd.com/es/services-information/news/2025/09/shipping-with-our-south-america-africa-triangle--sat--service--h.html",
+      "publishedAt": null,
+      "dateNote": "Aviso de septiembre de 2025; día de publicación no expuesto. Retirada de Santos desde noviembre de 2025.",
+      "summary": "Publica la secuencia Durban–Luanda–Paranaguá en el retorno a Brasil. No permite enlazar automáticamente Durban–Santos con CON; tampoco demuestra que ningún otro operador sirva Durban–Santos.",
+      "coverage": "Alcance limitado al documento y su fecha. Publica la secuencia Durban–Luanda–Paranaguá en el retorno a Brasil. No permite enlazar automáticamente Durban–Santos con CON; tampoco demuestra que ningún otro operador sirva Durban–Santos.",
+      "category": "Navieras",
+      "access": "Consulta pública sin pago. Documento abierto"
+    },
+    {
+      "id": "atl-africa-week35",
+      "number": 29,
+      "title": "Week 35 – Africa Operational Update",
+      "shortName": "Hapag-Lloyd",
+      "publisher": "Hapag-Lloyd",
+      "url": "https://www.hapag-lloyd.com/en/services-information/operational-updates/updates/2026/08/ops-update-africa-week35.html",
+      "publishedAt": "2026-08-24",
+      "dateNote": "",
+      "summary": "Confirma actividad de SA1 y SA2 entre Sudáfrica y Asia durante 2026. No confirma una conexión única Sudáfrica–Perú ni su duración total.",
+      "coverage": "Alcance limitado al documento y su fecha. Confirma actividad de SA1 y SA2 entre Sudáfrica y Asia durante 2026. No confirma una conexión única Sudáfrica–Perú ni su duración total.",
+      "category": "Navieras",
+      "access": "Consulta pública sin pago. Documento abierto"
+    },
+    {
+      "id": "atl-africa-week45",
+      "number": 30,
+      "title": "Week 45 – Africa Operational Update",
+      "shortName": "Hapag-Lloyd",
+      "publisher": "Hapag-Lloyd",
+      "url": "https://www.hapag-lloyd.com/en/services-information/operational-updates/updates/2026/11/ops-update-africa-week45.html",
+      "publishedAt": "2026-11-06",
+      "dateNote": "",
+      "summary": "Confirma ajustes de SAT asociados a esperas en Paranaguá y la reanudación de una rotación SAX desde Cape Town a London Gateway. Es evidencia operativa reciente, no una reserva de Sudáfrica a Perú.",
+      "coverage": "Alcance limitado al documento y su fecha. Confirma ajustes de SAT asociados a esperas en Paranaguá y la reanudación de una rotación SAX desde Cape Town a London Gateway. Es evidencia operativa reciente, no una reserva de Sudáfrica a Perú.",
+      "category": "Navieras",
+      "access": "Consulta pública sin pago. Documento abierto"
+    },
+    {
+      "id": "p_msc_alpaca",
+      "number": 31,
+      "title": "MSC announces Alpaca: rotación Ningbo–Busan–Callao",
+      "shortName": "MSC",
+      "publisher": "MSC",
+      "url": "https://www.msc.com/ko/newsroom/news/2025/july/msc-launches-fast-new-alpaca-service-for-trade-far-east-to-south-america-west-coast",
+      "publishedAt": "2025-07-31",
+      "dateNote": "",
+      "summary": "Anuncio de servicio semanal para septiembre de 2025. Publica Ningbo–Busan–Callao y continuación a puertos chilenos. No verifica una salida de noviembre de 2026.",
+      "coverage": "Alcance limitado al documento y su fecha. Anuncio de servicio semanal para septiembre de 2025. Publica Ningbo–Busan–Callao y continuación a puertos chilenos. No verifica una salida de noviembre de 2026.",
+      "category": "Navieras",
+      "access": "Consulta pública sin pago. Documento o página oficial leídos; vigencia y alcance según ficha."
+    },
+    {
+      "id": "p_apm_23",
+      "number": 32,
+      "title": "APM Callao anuncia el servicio Alpaca con 23 días Asia–Perú",
+      "shortName": "APM Terminals",
+      "publisher": "APM Terminals Callao",
+      "url": "https://akamai.apmterminals.com/es/callao/customer-zone/news-and-alerts/2025/251126-APM-Terminals-Callao-and-MSC-Launch-the-Alpaca-Service",
+      "publishedAt": "2025-11-26",
+      "dateNote": "",
+      "summary": "Publica 23 días de tránsito desde Asia al Callao y frecuencia semanal. Es referencia comercial fechada, no un compromiso para cualquier origen asiático o cualquier viaje.",
+      "coverage": "Alcance limitado al documento y su fecha. Publica 23 días de tránsito desde Asia al Callao y frecuencia semanal. Es referencia comercial fechada, no un compromiso para cualquier origen asiático o cualquier viaje.",
+      "category": "Puertos",
+      "access": "Consulta pública sin pago. Documento o página oficial leídos; vigencia y alcance según ficha."
+    },
+    {
+      "id": "p_cosco_23_export",
+      "number": 33,
+      "title": "COSCO: Chancay Express transporta plátanos peruanos a Shanghái",
+      "shortName": "COSCO",
+      "publisher": "COSCO SHIPPING, publicación de su cuenta corporativa",
+      "url": "https://www.linkedin.com/posts/coscoshipping_coscoshipping-connectingtheworld-letsgodigital-activity-7503422987459694592-UdIi",
+      "publishedAt": null,
+      "dateNote": "Fecha exacta no visible; la página indica hace 1 mes",
+      "summary": "La publicación define expresamente 23 días para Chancay→Shanghái. No prueba el tránsito inverso de importación a Perú ni dos salidas semanales WSA5.",
+      "coverage": "Alcance limitado al documento y su fecha. La publicación define expresamente 23 días para Chancay→Shanghái. No prueba el tránsito inverso de importación a Perú ni dos salidas semanales WSA5.",
+      "category": "Navieras",
+      "access": "Consulta pública sin pago. Documento o página oficial leídos; vigencia y alcance según ficha."
+    },
+    {
+      "id": "p_oocl_tlp5",
+      "number": 34,
+      "title": "OOCL TLP5: programa por servicio",
+      "shortName": "OOCL",
+      "publisher": "OOCL",
+      "url": "https://www.oocl.com/SiteCollectionDocuments/OOCL/eServices/Sailing%20Schedule%20by%20Service/TLP5_LT.pdf",
+      "publishedAt": "2025-11-19",
+      "dateNote": "",
+      "summary": "El programa histórico muestra Shanghái, Qingdao, puertos mexicanos, Buenaventura, Guayaquil y Chancay antes de retornar a Shanghái. La dirección hacia Perú tiene escalas; verificar rotación y calendario actuales.",
+      "coverage": "Alcance limitado al documento y su fecha. El programa histórico muestra Shanghái, Qingdao, puertos mexicanos, Buenaventura, Guayaquil y Chancay antes de retornar a Shanghái. La dirección hacia Perú tiene escalas; verificar rotación y calendario actuales.",
+      "category": "Navieras",
+      "access": "Consulta pública sin pago. Documento o página oficial leídos; vigencia y alcance según ficha."
+    },
+    {
+      "id": "p_hlag_iax",
+      "number": 35,
+      "title": "Hapag-Lloyd India Asia Express (IAX)",
+      "shortName": "Hapag-Lloyd",
+      "publisher": "Hapag-Lloyd",
+      "url": "https://www.hapag-lloyd.com/en/services-information/news/2025/01/iax-service-india-north-america-asia.html",
+      "publishedAt": null,
+      "dateNote": "2025-01; día no visible",
+      "summary": "Publica conexión desde Mundra vía Singapur, Qingdao, Tianjin/Xingang y Busan a partir de febrero de 2025. No publica en este anuncio una conexión contratada hasta Perú.",
+      "coverage": "Alcance limitado al documento y su fecha. Publica conexión desde Mundra vía Singapur, Qingdao, Tianjin/Xingang y Busan a partir de febrero de 2025. No publica en este anuncio una conexión contratada hasta Perú.",
+      "category": "Navieras",
+      "access": "Consulta pública sin pago. Documento o página oficial leídos; vigencia y alcance según ficha."
+    },
+    {
+      "id": "p_oocl_cix3",
+      "number": 36,
+      "title": "OOCL India: rutas de servicio",
+      "shortName": "OOCL",
+      "publisher": "OOCL",
+      "url": "https://www.oocl.com/india/eng/localinformation/serviceprofile/Pages/ServiceRoute.aspx",
+      "publishedAt": null,
+      "dateNote": "Sin fecha de actualización visible",
+      "summary": "CIX3 eastbound enumera Nhava Sheva, Pipavav, Port Klang, Singapur, Hong Kong, Shanghái, Ningbo y Xiamen. Sirve como prueba de un tramo hacia hubs asiáticos; no confirma una conexión India–Perú.",
+      "coverage": "Alcance limitado al documento y su fecha. CIX3 eastbound enumera Nhava Sheva, Pipavav, Port Klang, Singapur, Hong Kong, Shanghái, Ningbo y Xiamen. Sirve como prueba de un tramo hacia hubs asiáticos; no confirma una conexión India–Perú.",
+      "category": "Navieras",
+      "access": "Consulta pública sin pago. Documento o página oficial leídos; vigencia y alcance según ficha."
+    },
+    {
+      "id": "p_oocl_sis",
+      "number": 37,
+      "title": "OOCL anuncia Southeast Asia–Indian Subcontinent Service",
+      "shortName": "OOCL",
+      "publisher": "OOCL",
+      "url": "https://www.oocl.com/eng/aboutoocl/corporatemessages/2026/Pages/01Apr2026.aspx",
+      "publishedAt": "2026-04-01",
+      "dateNote": "",
+      "summary": "Anuncia SIS desde el 24 de abril de 2026. Rotación con Nhava Sheva, Mundra, Karachi, Port Klang y Singapur. Confirma conectividad intraasiática, sin ofrecer un tránsito a Perú.",
+      "coverage": "Alcance limitado al documento y su fecha. Anuncia SIS desde el 24 de abril de 2026. Rotación con Nhava Sheva, Mundra, Karachi, Port Klang y Singapur. Confirma conectividad intraasiática, sin ofrecer un tránsito a Perú.",
+      "category": "Navieras",
+      "access": "Consulta pública sin pago. Documento o página oficial leídos; vigencia y alcance según ficha."
+    },
+    {
+      "id": "p_msc_bungaraya",
+      "number": 38,
+      "title": "MSC Intra Asia Network: Bungaraya northbound",
+      "shortName": "MSC",
+      "publisher": "MSC",
+      "url": "https://www.msc.com/-/media/files/msc-cargo/msc-solutions/trades/east-west-network/intra-asia-network.pdf?rev=d8727e94f23044419862557c2e339422",
+      "publishedAt": null,
+      "dateNote": "Sin fecha de edición visible",
+      "summary": "El PDF oficial publica cobertura norte desde Port Klang y Penang hacia Shanghái, Ningbo y Nansha. Sus tiempos son indicativos. No prueba el enlace con Alpaca ni una fecha de transbordo.",
+      "coverage": "Alcance limitado al documento y su fecha. El PDF oficial publica cobertura norte desde Port Klang y Penang hacia Shanghái, Ningbo y Nansha. Sus tiempos son indicativos. No prueba el enlace con Alpaca ni una fecha de transbordo.",
+      "category": "Navieras",
+      "access": "Consulta pública sin pago. Documento o página oficial leídos; vigencia y alcance según ficha."
+    },
+    {
+      "id": "p_cnc_kcm2",
+      "number": 39,
+      "title": "CNC KCM2: rotación norte Malasia–China",
+      "shortName": "CNC",
+      "publisher": "CNC / Grupo CMA CGM",
+      "url": "https://www.cnc-line.com/ebusiness/schedules/line-services/flyer/KCM2CNC",
+      "publishedAt": null,
+      "dateNote": "Sin fecha de actualización visible",
+      "summary": "La ficha publica Port Klang–Singapur–Nansha–Xiamen–Qingdao–Tianjin en dirección norte. No se debe usar su tramo sur para deducir una conexión inversa hacia Perú.",
+      "coverage": "Alcance limitado al documento y su fecha. La ficha publica Port Klang–Singapur–Nansha–Xiamen–Qingdao–Tianjin en dirección norte. No se debe usar su tramo sur para deducir una conexión inversa hacia Perú.",
+      "category": "Navieras",
+      "access": "Consulta pública sin pago. Documento o página oficial leídos; vigencia y alcance según ficha."
+    },
+    {
+      "id": "p_maersk_melbourne",
+      "number": 40,
+      "title": "Melbourne Star: escala estacional en Southern Star",
+      "shortName": "Maersk",
+      "publisher": "Maersk",
+      "url": "https://www.maersk.com/news/articles/2026/07/06/melbourne-star-seasonal-inducement-of-southern-star-oceania-network",
+      "publishedAt": "2026-07-06",
+      "dateNote": "",
+      "summary": "Anuncia escalas de Melbourne para agosto–5 de octubre de 2026 y tiempos indicativos a Tanjung Pelepas/Singapur. No confirma una salida de Melbourne en noviembre ni el tránsito total a Perú.",
+      "coverage": "Alcance limitado al documento y su fecha. Anuncia escalas de Melbourne para agosto–5 de octubre de 2026 y tiempos indicativos a Tanjung Pelepas/Singapur. No confirma una salida de Melbourne en noviembre ni el tránsito total a Perú.",
+      "category": "Navieras",
+      "access": "Consulta pública sin pago. Documento o página oficial leídos; vigencia y alcance según ficha."
+    },
+    {
+      "id": "p_cma_pad",
+      "number": 41,
+      "title": "CMA CGM Panama Direct Line: ficha de marzo de 2026",
+      "shortName": "CMA CGM",
+      "publisher": "CMA CGM",
+      "url": "https://www.cma-cgm.com/assets/public/documents/PAD_2.pdf",
+      "publishedAt": null,
+      "dateNote": "2026-03",
+      "summary": "Ficha oficial de PAD con Australia, Nueva Zelanda, Europa y costa este de Estados Unidos. La rotación mostrada no incluye Pisco; por ser anterior no refuta por sí sola un cambio anunciado para diciembre.",
+      "coverage": "Alcance limitado al documento y su fecha. Ficha oficial de PAD con Australia, Nueva Zelanda, Europa y costa este de Estados Unidos. La rotación mostrada no incluye Pisco; por ser anterior no refuta por sí sola un cambio anunciado para diciembre.",
+      "category": "Navieras",
+      "access": "Consulta pública sin pago. Documento o página oficial leídos; vigencia y alcance según ficha."
+    },
+    {
+      "id": "p_cma_pisco_cutoff",
+      "number": 42,
+      "title": "CMA CGM Perú: standard cut-offs, enero 2026",
+      "shortName": "CMA CGM",
+      "publisher": "CMA CGM Perú",
+      "url": "https://www.cma-cgm.com/assets/public/documents/PERU%20EXPORTATION%20SCHEDULE%20%E2%80%93%20Standard%20Cut-Off%20-%20Jan%202026.pdf",
+      "publishedAt": null,
+      "dateNote": "2026-01",
+      "summary": "El documento incluye Panama Direct Line (RTWPAN) en Pisco. Son instrucciones de exportación de enero; no acreditan aceptación de importaciones desde Australia ni la temporada diciembre 2026.",
+      "coverage": "Alcance limitado al documento y su fecha. El documento incluye Panama Direct Line (RTWPAN) en Pisco. Son instrucciones de exportación de enero; no acreditan aceptación de importaciones desde Australia ni la temporada diciembre 2026.",
+      "category": "Navieras",
+      "access": "Consulta pública sin pago. Documento o página oficial leídos; vigencia y alcance según ficha."
+    },
+    {
+      "id": "p_hlag_chile",
+      "number": 43,
+      "title": "Hapag-Lloyd Chile: servicios locales",
+      "shortName": "Hapag-Lloyd",
+      "publisher": "Hapag-Lloyd",
+      "url": "https://www.hapag-lloyd.com/es/services-information/offices-localinfo/latin-america/chile.html",
+      "publishedAt": null,
+      "dateNote": "Sin fecha específica de actualización de servicios",
+      "summary": "La sección Servicios lista AN2 hacia Perú, CON hacia Callao/Guayaquil y WS3 como feeder a Callao. AND se identifica separadamente como cabotaje chileno.",
+      "coverage": "Alcance limitado al documento y su fecha. La sección Servicios lista AN2 hacia Perú, CON hacia Callao/Guayaquil y WS3 como feeder a Callao. AND se identifica separadamente como cabotaje chileno.",
+      "category": "Navieras",
+      "access": "Consulta pública sin pago. Documento o página oficial leídos; vigencia y alcance según ficha."
+    },
+    {
+      "id": "p_iti_chancay",
+      "number": 44,
+      "title": "ITI y COSCO ponen en marcha Chancay Express",
+      "shortName": "ITI",
+      "publisher": "Iquique Terminal Internacional",
+      "url": "https://www.iti.cl/iti-y-cosco-shipping-ponen-en-marcha-nuevo-servicio-chancay-express/",
+      "publishedAt": "2025-02-21",
+      "dateNote": "",
+      "summary": "El terminal anuncia recaladas semanales y conexión Iquique–Chancay–Shanghái. Confirma un antecedente primario de conectividad; requiere verificar salida y aceptación actuales.",
+      "coverage": "Alcance limitado al documento y su fecha. El terminal anuncia recaladas semanales y conexión Iquique–Chancay–Shanghái. Confirma un antecedente primario de conectividad; requiere verificar salida y aceptación actuales.",
+      "category": "Puertos",
+      "access": "Consulta pública sin pago. Documento o página oficial leídos; vigencia y alcance según ficha."
+    },
+    {
+      "id": "p_chacalluta",
+      "number": 45,
+      "title": "Horarios de carga en Chacalluta y otros complejos",
+      "shortName": "Pasos Fronterizos",
+      "publisher": "Unidad de Pasos Fronterizos, Gobierno de Chile",
+      "url": "https://www.pasosfronterizos.gov.cl/noticias/chacalluta-chungara-y-colchane-complejos-fronterizos-extienden-su-horario-24-7/",
+      "publishedAt": "2024-05-15",
+      "dateNote": "",
+      "summary": "Documenta atención de transporte de carga por Chacalluta. No acredita estado vial ni horario vigente el día del embarque; la información diferencia carga, carga agrícola y vehículos vacíos.",
+      "coverage": "Alcance limitado al documento y su fecha. Documenta atención de transporte de carga por Chacalluta. No acredita estado vial ni horario vigente el día del embarque; la información diferencia carga, carga agrícola y vehículos vacíos.",
+      "category": "Terrestre",
+      "access": "Consulta pública sin pago. Documento o página oficial leídos; vigencia y alcance según ficha."
+    },
+    {
+      "id": "maersk-suez-sep2026",
+      "number": 46,
+      "title": "Structural changes to AE5, AE11, AE12 and ME2 Gemini services",
+      "shortName": "Maersk",
+      "publisher": "Maersk",
+      "url": "https://www.maersk.com/news/articles/2026/09/14/structural-changes-ae5-ae11-ae12-me2-gemini-services",
+      "publishedAt": "2026-09-14",
+      "dateNote": "",
+      "summary": "Anuncia rutas por Suez para cuatro servicios Gemini, sujetas a condiciones de seguridad. No menciona escolta naval.",
+      "coverage": "Comunicado primario abierto completo. Es anuncio por servicios concretos; no acredita normalización de toda la red o ejecución de cada viaje.",
+      "category": "Navieras",
+      "access": "Consulta pública sin pago. Documento o página oficial leídos; vigencia y alcance según ficha."
+    },
+    {
+      "id": "hapag-suez-sep2026",
+      "number": 47,
+      "title": "Routing update for our NE4, SE1, SE2 and IEX services",
+      "shortName": "Hapag-Lloyd",
+      "publisher": "Hapag-Lloyd",
+      "url": "https://www.hapag-lloyd.com/es/services-information/news/2026/09/routing-update-for-our-ne4--se1--se2-and-iex-services.html",
+      "publishedAt": null,
+      "dateNote": "2026-09",
+      "summary": "Anuncia transición de esos servicios por Mar Rojo, con salidas previstas de septiembre y octubre. Sujeta operación a seguimiento de seguridad.",
+      "coverage": "Comunicado primario abierto. No se debe inferir escolta naval ni servicio general normalizado. Hay diferencia entre fechas de IEX/ME2 publicadas por ambas navieras; usar itinerario reservado para una expedición concreta.",
+      "category": "Navieras",
+      "access": "Consulta pública sin pago. Documento o página oficial leídos; vigencia y alcance según ficha."
+    },
+    {
+      "id": "maersk-fm1-oct2026",
+      "number": 48,
+      "title": "FM1 service to re-launch on Gemini Network: Asia–Middle East",
+      "shortName": "Maersk",
+      "publisher": "Maersk",
+      "url": "https://www.maersk.com/news/articles/2026/10/13/fm1-service-relaunch-gemini-network-asia-middle-east",
+      "publishedAt": "2026-10-13",
+      "dateNote": "",
+      "summary": "Anuncia Qingdao–Ningbo–Tanjung Pelepas–Khor Fakkan–Singapore–Qingdao. Primera salida prevista 17-oct y llegada Khor Fakkan 16-nov; siguen restricciones de reservas y aceptación.",
+      "coverage": "La rotación anunciada no incluye Jebel Ali. No confirma la ejecución del viaje ni cuantifica el tráfico total por Ormuz.",
+      "category": "Navieras",
+      "access": "Consulta pública sin pago. Documento o página oficial leídos; vigencia y alcance según ficha."
+    },
+    {
+      "id": "segob-133-2026",
+      "number": 49,
+      "title": "Segob informa sobre movilizaciones de transportistas en 19 entidades del país",
+      "shortName": "Segob México",
+      "publisher": "Secretaría de Gobernación, México",
+      "url": "https://www.gob.mx/segob/prensa/segob-informa-sobre-movilizaciones-de-transportistas-en-19-entidades-del-pais?idiom=es-MX",
+      "publishedAt": "2026-10-26",
+      "dateNote": "",
+      "summary": "Comunicado 133 indexado: 38 puntos de manifestación en 19 entidades a las 09:30 del 26-oct.",
+      "coverage": "Fuente oficial localizada y texto legible en resultado indexado; apertura directa falló. No equivale a 38 bloqueos totales ni a situación actual.",
+      "category": "Terrestre",
+      "access": "Fuente pública localizada en índice; apertura directa limitada. indexed_official_excerpt; direct_open_failed"
+    },
+    {
+      "id": "segob-138-2026",
+      "number": 50,
+      "title": "Tras diálogo con Segob, CANACAR acuerda retirar bloqueos y sentarse a dialogar",
+      "shortName": "Segob México",
+      "publisher": "Secretaría de Gobernación, México",
+      "url": "https://www.gob.mx/segob/prensa/acuerdan-segob-y-canacar-retiro-de-bloqueos-y-mesas-de-dialogo?idiom=es",
+      "publishedAt": "2026-10-27",
+      "dateNote": "",
+      "summary": "Comunicado 138 indexado: organizaciones participantes se comprometieron a retirar bloqueos y suspender manifestaciones.",
+      "coverage": "Fuente oficial indexada; apertura directa falló con error/403. Un compromiso no demuestra ejecución ni reapertura completa de todas las carreteras.",
+      "category": "Terrestre",
+      "access": "Fuente pública localizada en índice; apertura directa limitada. indexed_official_excerpt; direct_open_failed"
+    },
+    {
+      "id": "cechap-chancay-jan2026",
+      "number": 51,
+      "title": "Puerto de Chancay en su primer año: Conectado al mar, ¿de espaldas a la ciudad? Reporte N.º 3",
+      "shortName": "CECHAP",
+      "publisher": "Universidad del Pacífico, CECHAP/CIUP, Observatorio de Chancay",
+      "url": "https://cechap.up.edu.pe/wp-content/uploads/InformeChancay.pdf",
+      "publishedAt": null,
+      "dateNote": "2026-01",
+      "summary": "Reporte primario de investigación: 286.255 TEU noviembre 2024–noviembre 2025, transbordo aproximado 45,5%. Usa datos APN y describe servicios de ese periodo.",
+      "coverage": "PDF abierto. El porcentaje y posición portuaria son históricos; el informe no acredita 200.000 TEU del primer semestre de 2026 ni una red de servicios vigente a noviembre.",
+      "category": "Puertos",
+      "access": "Consulta pública sin pago. Documento o página oficial leídos; vigencia y alcance según ficha."
+    },
+    {
+      "id": "tisur-containers",
+      "number": 52,
+      "title": "TISUR — Servicios de contenedores",
+      "shortName": "TISUR",
+      "publisher": "Terminal Internacional del Sur (operador Matarani)",
+      "url": "https://tisur.com.pe/servicios/contenedores/",
+      "publishedAt": null,
+      "dateNote": "Fecha de publicación no visible; consulta del 7-nov-2026.",
+      "summary": "Texto oficial indexado declara servicios de contenedores y líneas Evergreen/Hapag-Lloyd con itinerario regular.",
+      "coverage": "Apertura directa falló 502; página sin fecha visible y sin calendario de viajes corroborado. No basta para confirmar una escala o espacio al 7-nov.",
+      "category": "Puertos",
+      "access": "Fuente pública localizada en índice; apertura directa limitada. indexed_operator_excerpt; direct_open_failed"
+    },
+    {
+      "id": "apn-matarani-2025",
+      "number": 53,
+      "title": "Terminal Portuario de Matarani movilizó más de 8,3 millones de TM y registró fuerte crecimiento de contenedores en 2025",
+      "shortName": "APN",
+      "publisher": "Autoridad Portuaria Nacional, Perú",
+      "url": "https://www.gob.pe/institucion/apn/noticias/1348766-terminal-portuario-de-matarani-movilizo-mas-de-8-3-millones-de-tm-y-registro-fuerte-crecimiento-en-movimiento-de-contenedores-en-el-2025",
+      "publishedAt": "2026-02-06",
+      "dateNote": "",
+      "summary": "Nota oficial indexada reporta 8.392 TEU movilizados durante 2025 en Matarani.",
+      "coverage": "Apertura directa falló 418. Acredita actividad histórica según autoridad, no itinerarios o capacidad disponible en una fecha actual.",
+      "category": "Puertos",
+      "access": "Fuente pública localizada en índice; apertura directa limitada. indexed_official_excerpt; direct_open_failed"
+    }
+  ],
+  "origins": [
+    {
+      "id": "nl",
+      "name": "Países Bajos",
+      "overview": "La ruta SWX a Callao está publicada. Para evitar las esclusas, evaluar una conexión ferroviaria en Panamá o un transbordo en Brasil, ambos sujetos a confirmación integral.",
+      "options": [
+        {
+          "id": "nl-swx",
+          "label": "Base · SWX a Callao",
+          "path": [
+            "Rotterdam",
+            "Puertos de Europa y Caribe",
+            "Canal de Panamá",
+            "Buenaventura / Posorja",
+            "Callao"
+          ],
+          "mode": "Marítimo",
+          "panama": true,
+          "status": "documentada",
+          "service": "Hapag-Lloyd SWX",
+          "transit": "A confirmar para buque y viaje",
+          "note": "El servicio publicado incluye Callao. Un servicio directo puede realizar escalas sin transbordar la carga; no significa navegación sin escalas.",
+          "sourceIds": [
+            "atl-swx"
+          ],
+          "requirements": [
+            "Confirmar nave, viaje, ETA/ETD y escala efectiva en Callao",
+            "Validar cupo, equipo y condiciones del embarque"
+          ]
+        },
+        {
+          "id": "nl-rail",
+          "label": "Alterna · cruce ferroviario de Panamá",
+          "path": [
+            "Rotterdam",
+            "Puerto atlántico de Panamá",
+            "Ferrocarril interoceánico",
+            "Balboa / terminal del Pacífico",
+            "Callao"
+          ],
+          "mode": "Marítimo + ferrocarril + marítimo",
+          "panama": false,
+          "status": "propuesta",
+          "service": "PCRC y conexiones marítimas por contratar",
+          "transit": "Sin tiempo integral confirmado",
+          "note": "La infraestructura ferroviaria existe. Falta confirmar los dos tramos marítimos, transferencia, cupo ferroviario y tiempo de espera; la duración del tren no es el tránsito puerta a puerta.",
+          "sourceIds": [
+            "atl-pcrc",
+            "atl-wcca-2026"
+          ],
+          "requirements": [
+            "Cotización integral de los tres tramos",
+            "Confirmación escrita de terminales, ventanas y cupo ferroviario",
+            "Revisar custodia, documentos, equipo y cargos de transferencias"
+          ]
+        },
+        {
+          "id": "nl-brazil",
+          "label": "Alterna · Brasil y Magallanes",
+          "path": [
+            "Rotterdam",
+            "Santos / Itapoá",
+            "Transbordo a CON",
+            "Estrecho de Magallanes",
+            "San Antonio",
+            "Callao"
+          ],
+          "mode": "Marítimo con transbordo",
+          "panama": false,
+          "status": "propuesta",
+          "service": "ECX + CON, combinación a confirmar",
+          "transit": "Sin tiempo integral confirmado",
+          "note": "Los dos servicios están documentados; su encadenamiento comercial y la ventana de transbordo no se han confirmado.",
+          "sourceIds": [
+            "atl-ecx",
+            "atl-con",
+            "atl-intra"
+          ],
+          "requirements": [
+            "Confirmar puerto común, terminal y ventana de conexión",
+            "Solicitar cotización total y responsabilidad entre tramos",
+            "Comparar plazo total con la necesidad real de entrega"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "us",
+      "name": "Estados Unidos",
+      "overview": "Separar costa este/Golfo de costa oeste. El cruce de Panamá corresponde al itinerario elegido; no a toda carga estadounidense. Un puente terrestre al Pacífico requiere cotización total.",
+      "options": [
+        {
+          "id": "us-amerxl",
+          "label": "Base · costa este por AMERXL",
+          "path": [
+            "Port Everglades / Filadelfia / Nueva York",
+            "Cartagena",
+            "Canal de Panamá",
+            "Guayaquil",
+            "Callao"
+          ],
+          "mode": "Marítimo",
+          "panama": true,
+          "status": "documentada",
+          "service": "CMA CGM AMERXL",
+          "transit": "Referencia de ficha: 20 días Port Everglades–Callao; confirmar viaje",
+          "note": "Frecuencia semanal publicada; la tabla dinámica puede contener omisiones por nave. La ficha comercial no garantiza el plazo de un booking.",
+          "sourceIds": [
+            "atl-amerxl",
+            "atl-amerxl-schedule"
+          ],
+          "requirements": [
+            "Confirmar puerto exacto de carga y escala de descarga en el viaje",
+            "Verificar omisiones y ETA real antes de prometer fecha"
+          ]
+        },
+        {
+          "id": "us-pacific",
+          "label": "Alterna · salida por el Pacífico",
+          "path": [
+            "Origen USA",
+            "Camión / ferrocarril a costa oeste",
+            "Los Ángeles / puerto confirmado",
+            "Conexión del Pacífico a confirmar",
+            "Callao"
+          ],
+          "mode": "Terrestre + marítimo con conexión",
+          "panama": false,
+          "status": "propuesta",
+          "service": "Servicios de costa oeste y enlace a Perú por cotizar",
+          "transit": "Sin tiempo integral confirmado",
+          "note": "WCCA2 es antecedente para conectar con Centroamérica/Balboa. Manzanillo fue retirado según actualización de febrero de 2026; no fijar ese puerto ni copiar tránsitos de sentido inverso.",
+          "sourceIds": [
+            "atl-wcca-2024",
+            "atl-wcca-2026"
+          ],
+          "requirements": [
+            "Confirmar ruta sur actual y puerto de transbordo",
+            "Verificar costo y plazo del traslado interno en USA",
+            "Asegurar continuidad comercial hasta Callao sin cruce de esclusas"
+          ]
+        },
+        {
+          "id": "us-rail",
+          "label": "Alterna · ferrocarril en Panamá",
+          "path": [
+            "Costa este / Golfo",
+            "Puerto atlántico de Panamá",
+            "Ferrocarril interoceánico",
+            "Puerto del Pacífico",
+            "Callao"
+          ],
+          "mode": "Marítimo + ferrocarril + marítimo",
+          "panama": false,
+          "status": "propuesta",
+          "service": "PCRC y dos tramos marítimos por confirmar",
+          "transit": "Sin tiempo integral confirmado",
+          "note": "Evita el uso de esclusas en el cruce interoceánico propuesto. La capacidad ferroviaria y las conexiones marítimas deben confirmarse conjuntamente.",
+          "sourceIds": [
+            "atl-pcrc"
+          ],
+          "requirements": [
+            "Confirmación de espacio en los tres tramos",
+            "Terminales y transferencias acordadas",
+            "Cotización de gastos locales y tiempo total"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mx",
+      "name": "México",
+      "overview": "El embarque desde el Pacífico mexicano ofrece conexiones publicadas con Callao sin Panamá. La carga del Golfo necesita resolver el traslado hacia un puerto del Pacífico o elegir otro itinerario marítimo.",
+      "options": [
+        {
+          "id": "mx-ax4",
+          "label": "Base · Pacífico mexicano–Callao",
+          "path": [
+            "Ensenada / Lázaro Cárdenas / Manzanillo",
+            "Callao"
+          ],
+          "mode": "Marítimo",
+          "panama": false,
+          "status": "documentada",
+          "service": "ONE AX4; otras opciones regionales a consultar",
+          "transit": "A confirmar por puerto y viaje",
+          "note": "El aviso oficial de abril de 2026 publica la secuencia de puertos y frecuencia semanal. Se recuperó por buscador; el sitio bloqueó la apertura directa con 403.",
+          "sourceIds": [
+            "atl-ax4",
+            "atl-intra"
+          ],
+          "requirements": [
+            "Confirmar servicio y espacio intra-Américas para el puerto mexicano elegido",
+            "Verificar si la escala se mantiene en la nave propuesta"
+          ]
+        },
+        {
+          "id": "mx-land",
+          "label": "Alterna · Golfo a puerto del Pacífico",
+          "path": [
+            "Veracruz / Altamira / origen interior",
+            "Camión o ferrocarril a confirmar",
+            "Manzanillo / Lázaro Cárdenas",
+            "Callao"
+          ],
+          "mode": "Terrestre + marítimo",
+          "panama": false,
+          "status": "propuesta",
+          "service": "Operador terrestre + servicio del Pacífico",
+          "transit": "Sin tiempo integral confirmado",
+          "note": "Es una propuesta multimodal. La existencia del tramo marítimo no acredita un producto terrestre integral ni un costo competitivo.",
+          "sourceIds": [
+            "atl-ax4"
+          ],
+          "requirements": [
+            "Cotizar traslado interno según ubicación real de la carga",
+            "Confirmar disponibilidad de equipo y recepción portuaria",
+            "Verificar continuidad, plazo y costos completos"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cn",
+      "name": "China",
+      "overview": "Existen servicios transpacíficos documentados al Callao y Chancay. Confirmar sentido, escalas, nave y tránsito del viaje; la cifra WSA5 de 23 días corresponde a exportación desde Perú.",
+      "options": [
+        {
+          "id": "cn-alpaca",
+          "label": "Alpaca hacia Callao",
+          "path": [
+            "Ningbo",
+            "Busan",
+            "Callao"
+          ],
+          "mode": "Marítimo",
+          "panama": false,
+          "status": "documentada",
+          "service": "MSC Alpaca",
+          "transit": "Referencia publicada: 23 días Asia→Callao (APM, 26-nov-2025). Confirmar puerto exacto y viaje.",
+          "note": "Rotación publicada por MSC en 2025; no implica cupo ni salida vigente. Servicio directo puede incluir escalas sin cambiar de buque.",
+          "sourceIds": [
+            "p_msc_alpaca",
+            "p_apm_23"
+          ],
+          "requirements": [
+            "Itinerario por nave/viaje y puerto de carga",
+            "Confirmación de espacio y equipo",
+            "Terminal y estado operativo al arribo"
+          ]
+        },
+        {
+          "id": "cn-chancay",
+          "label": "Transpacífico hacia Chancay",
+          "path": [
+            "Shanghái",
+            "Qingdao",
+            "Pacífico mexicano",
+            "Buenaventura",
+            "Guayaquil",
+            "Chancay"
+          ],
+          "mode": "Marítimo",
+          "panama": false,
+          "status": "documentada",
+          "service": "OOCL TLP5 / familia de servicio WSA5",
+          "transit": "No fijado: pedir tránsito China→Perú; no reutilizar 23 días del sentido Chancay→Shanghái.",
+          "note": "La evidencia oficial de rotación consultada es del 19-nov-2025. Conservar como ruta documentada histórica y reconfirmar escala actual.",
+          "sourceIds": [
+            "p_oocl_tlp5",
+            "p_cosco_23_export"
+          ],
+          "requirements": [
+            "Rotación vigente en sentido este",
+            "Confirmar número de escalas y transbordos",
+            "Terminal, retiro y camión Chancay–destino"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "in",
+      "name": "India",
+      "overview": "Hay tramos oficiales desde India a hubs asiáticos. El enlace completo a Perú se plantea para cotización; no se verificó un servicio directo ni un tránsito total con naviera.",
+      "options": [
+        {
+          "id": "in-busan",
+          "label": "Vía hub del norte de Asia",
+          "path": [
+            "Mundra",
+            "Hub asiático (p. ej. Busan)",
+            "Callao"
+          ],
+          "mode": "Marítimo con transbordo",
+          "panama": false,
+          "status": "propuesta",
+          "service": "Tramo India–Asia documentado (IAX); conexión transpacífica a confirmar",
+          "transit": "Pendiente de itinerario integrado y espera de conexión.",
+          "note": "La existencia de IAX y de servicios Asia–Callao no prueba compatibilidad comercial ni transbordo entre ellos.",
+          "sourceIds": [
+            "p_hlag_iax",
+            "p_msc_alpaca"
+          ],
+          "requirements": [
+            "Cotización end-to-end con naviera/NVOCC",
+            "Naviera receptora y terminal de transbordo",
+            "Aceptación de mercancía y BL",
+            "ETD/ETA de ambos tramos y margen de conexión"
+          ]
+        },
+        {
+          "id": "in-shanghai",
+          "label": "Vía Shanghái hacia Chancay",
+          "path": [
+            "Nhava Sheva",
+            "Hub de China",
+            "Chancay"
+          ],
+          "mode": "Marítimo con transbordo",
+          "panama": false,
+          "status": "propuesta",
+          "service": "CIX3 documenta India–China; enlace transpacífico a confirmar",
+          "transit": "No verificado con naviera para el viaje completo.",
+          "note": "Esquema de conexión. El tramo final puede incluir escalas mexicanas y sudamericanas; no es un servicio India–Perú directo.",
+          "sourceIds": [
+            "p_oocl_cix3",
+            "p_oocl_tlp5"
+          ],
+          "requirements": [
+            "Puerto/hub definitivo",
+            "Confirmación de conexión bajo contrato de transporte",
+            "Escalas, ventanas y disponibilidad",
+            "Cotización total incluido transbordo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cl",
+      "name": "Chile",
+      "overview": "Las fuentes primarias documentan servicios a Callao y Chancay y el paso terrestre Chacalluta. Debe elegirse según disponibilidad real, estado portuario y destino; no por una presunción general de menor riesgo climático.",
+      "options": [
+        {
+          "id": "cl-callao",
+          "label": "Servicio marítimo hacia Callao",
+          "path": [
+            "Puerto chileno confirmado",
+            "Callao"
+          ],
+          "mode": "Marítimo",
+          "panama": false,
+          "status": "documentada",
+          "service": "Hapag-Lloyd: AN2 / CON / WS3, según puerto y salida",
+          "transit": "Consultar itinerario del servicio y sentido concreto.",
+          "note": "La página local de la naviera publica servicios desde Chile hacia Perú. No se verificó una salida específica desde San Antonio. Tratar como transporte internacional, no como cabotaje chileno.",
+          "sourceIds": [
+            "p_hlag_chile"
+          ],
+          "requirements": [
+            "Puerto chileno y nave/viaje",
+            "Aceptar carga local Chile–Perú",
+            "Cupo, equipo y terminal peruano",
+            "Estado oficial de puerto al arribo"
+          ]
+        },
+        {
+          "id": "cl-chancay",
+          "label": "Iquique hacia Chancay",
+          "path": [
+            "Iquique",
+            "Chancay"
+          ],
+          "mode": "Marítimo",
+          "panama": false,
+          "status": "documentada",
+          "service": "COSCO Chancay Express",
+          "transit": "No verificado para una salida actual.",
+          "note": "ITI anunció conexión y frecuencia semanal en febrero de 2025. Se requiere reconfirmar continuidad, sentido y aceptación local.",
+          "sourceIds": [
+            "p_iti_chancay"
+          ],
+          "requirements": [
+            "Servicio y salida actualmente ofrecidos",
+            "Aceptación de carga Iquique–Chancay",
+            "Cupo/equipo y retiro terrestre"
+          ]
+        },
+        {
+          "id": "cl-road",
+          "label": "Terrestre por Chacalluta–Santa Rosa",
+          "path": [
+            "Arica",
+            "Chacalluta–Santa Rosa",
+            "Tacna",
+            "Destino en Perú"
+          ],
+          "mode": "Camión",
+          "panama": false,
+          "status": "propuesta",
+          "service": "Transporte internacional terrestre a contratar",
+          "transit": "Cotizar según origen, destino, frontera y condición vial.",
+          "note": "El corredor está documentado oficialmente; la fuente no certifica su estado actual. Verificar por separado horario de carga, requisitos aduaneros y carretera.",
+          "sourceIds": [
+            "p_chacalluta"
+          ],
+          "requirements": [
+            "Transportista habilitado y documentación",
+            "Estado y horario vigente de frontera para el tipo de carga",
+            "Condiciones de Panamericana y última milla",
+            "Seguro, pesos/dimensiones y costo total"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "br",
+      "name": "Brasil",
+      "overview": "CON ofrece un recorrido publicado a Callao por el extremo austral. Vía Cartagena existe una alternativa con conexión que vuelve a quedar expuesta a Panamá.",
+      "options": [
+        {
+          "id": "br-con",
+          "label": "Base · CON por Magallanes",
+          "path": [
+            "Itapoá / Río de Janeiro / Santos / Río Grande",
+            "Estrecho de Magallanes",
+            "San Antonio",
+            "Callao"
+          ],
+          "mode": "Marítimo",
+          "panama": false,
+          "status": "documentada",
+          "service": "Hapag-Lloyd CON",
+          "transit": "A confirmar por puerto y viaje",
+          "note": "Callao aparece en la rotación oficial. No se afirma una frecuencia quincenal para Perú ni exclusividad del servicio frente a todo el mercado.",
+          "sourceIds": [
+            "atl-con",
+            "atl-intra"
+          ],
+          "requirements": [
+            "Confirmar escala del puerto brasileño y de Callao en el viaje",
+            "Solicitar tránsito y frecuencia vigentes",
+            "Revisar ajustes de rotación estacional"
+          ]
+        },
+        {
+          "id": "br-cartagena",
+          "label": "Alterna · conexión en Cartagena",
+          "path": [
+            "Santos / Río de Janeiro",
+            "Cartagena",
+            "Transbordo a servicio WCSA",
+            "Canal de Panamá",
+            "Callao"
+          ],
+          "mode": "Marítimo con transbordo",
+          "panama": true,
+          "status": "propuesta",
+          "service": "MSC Gulf to SAEC I + conexión a Perú por confirmar",
+          "transit": "Sin tiempo integral confirmado",
+          "note": "Se documentan tramos a Cartagena y desde Cartagena a Callao, pero falta una confirmación comercial integral. No sirve para evitar el Canal.",
+          "sourceIds": [
+            "atl-gulf-saec",
+            "atl-swx",
+            "atl-msw"
+          ],
+          "requirements": [
+            "Confirmar conexión, terminal y espera en Cartagena",
+            "Validar cupo en ambos servicios",
+            "Incluir recargos y exposición al Canal en la comparación"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "za",
+      "name": "Sudáfrica",
+      "overview": "No quedó confirmado un servicio integral directo a Perú. Hay tramos publicados hacia Asia, Europa y Brasil; cada combinación a Callao debe validarse con una cotización e itinerario completos.",
+      "options": [
+        {
+          "id": "za-asia",
+          "label": "Propuesta · transbordo en Asia",
+          "path": [
+            "Durban / puerto sudafricano confirmado",
+            "Hub asiático a confirmar",
+            "Servicio transpacífico",
+            "Callao"
+          ],
+          "mode": "Marítimo con transbordo",
+          "panama": false,
+          "status": "propuesta",
+          "service": "SA1 / SA2 u otro enlace + transpacífico a contratar",
+          "transit": "Sin tiempo integral confirmado",
+          "note": "La actividad Sudáfrica–Asia está documentada en 2026. No se validaron los 57 días del agregador ni una conexión concreta hasta Perú.",
+          "sourceIds": [
+            "atl-africa-week35",
+            "atl-ax4"
+          ],
+          "requirements": [
+            "Confirmar hub común y tránsito completo en sentido Sudáfrica→Perú",
+            "Validar ventanas y cantidad real de transbordos",
+            "Comparar costo y plazo con la ruta vía Europa"
+          ]
+        },
+        {
+          "id": "za-brazil",
+          "label": "Propuesta · Brasil y conexión a CON",
+          "path": [
+            "Durban",
+            "Luanda",
+            "Paranaguá",
+            "Enlace brasileño a confirmar",
+            "Santos / Itapoá",
+            "Magallanes",
+            "Callao"
+          ],
+          "mode": "Marítimo y conexión regional por definir",
+          "panama": false,
+          "status": "propuesta",
+          "service": "SAT + enlace regional + CON, a confirmar",
+          "transit": "Sin tiempo integral confirmado",
+          "note": "SAT retiró Santos desde noviembre de 2025. Con la evidencia hallada hay un enlace faltante entre el puerto de llegada en Brasil y CON; no tratarlo como simple transbordo Durban–Santos–Callao.",
+          "sourceIds": [
+            "atl-sat",
+            "atl-con",
+            "atl-africa-week45"
+          ],
+          "requirements": [
+            "Resolver y cotizar el enlace entre puertos o servicios de Brasil",
+            "Confirmar si existe alternativa comercial con puerto común",
+            "No asumir 13 días a partir del sentido inverso Santos→Durban"
+          ]
+        },
+        {
+          "id": "za-europe",
+          "label": "Propuesta · conexión por Europa",
+          "path": [
+            "Cape Town / puerto sudafricano confirmado",
+            "London Gateway / norte de Europa",
+            "Transbordo a SWX",
+            "Canal de Panamá",
+            "Callao"
+          ],
+          "mode": "Marítimo con transbordo",
+          "panama": true,
+          "status": "propuesta",
+          "service": "SAX + SWX, combinación por confirmar",
+          "transit": "Sin tiempo integral confirmado",
+          "note": "La actualización del 6 de noviembre documenta una salida SAX directa Cape Town–London Gateway; SWX cubre Europa–Callao. La combinación integral requiere confirmación.",
+          "sourceIds": [
+            "atl-africa-week45",
+            "atl-swx"
+          ],
+          "requirements": [
+            "Confirmar llegada y conexión en un puerto común",
+            "Comparar distancia, plazo y costo total",
+            "Validar exposición al Canal en el viaje propuesto"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "my",
+      "name": "Malasia",
+      "overview": "Port Klang tiene tramos documentados hacia China. El enlace a Callao o Chancay requiere confirmar conexión; se retiran los tránsitos tomados del sentido Perú→Malasia.",
+      "options": [
+        {
+          "id": "my-ningbo",
+          "label": "Vía Ningbo hacia Callao",
+          "path": [
+            "Port Klang",
+            "Ningbo (transbordo)",
+            "Busan",
+            "Callao"
+          ],
+          "mode": "Marítimo con transbordo",
+          "panama": false,
+          "status": "propuesta",
+          "service": "MSC Bungaraya + enlace con Alpaca sujeto a confirmación",
+          "transit": "No verificado para Malasia→Perú.",
+          "note": "Ambos servicios tienen evidencia oficial independiente; no se confirmó un producto conectado ni el tiempo de espera.",
+          "sourceIds": [
+            "p_msc_bungaraya",
+            "p_msc_alpaca"
+          ],
+          "requirements": [
+            "Itinerario integrado MSC y conexión aceptada",
+            "Equipo y aceptación de carga",
+            "Cut-off de cada tramo",
+            "Costo de transbordo y estadías"
+          ]
+        },
+        {
+          "id": "my-chancay",
+          "label": "Vía China hacia Chancay",
+          "path": [
+            "Port Klang",
+            "Hub chino (p. ej. Shanghái)",
+            "Chancay"
+          ],
+          "mode": "Marítimo con transbordo",
+          "panama": false,
+          "status": "propuesta",
+          "service": "Cobertura intra-Asia + transpacífico a seleccionar",
+          "transit": "Pendiente de cotización e itinerario en sentido de importación.",
+          "note": "La documentación intra-Asia prueba cobertura hacia China, no la conexión final ni una tarifa combinada.",
+          "sourceIds": [
+            "p_msc_bungaraya",
+            "p_oocl_tlp5"
+          ],
+          "requirements": [
+            "Seleccionar naviera con conexión aceptada",
+            "Validar dirección de cada tramo",
+            "Fecha de arribo a Chancay y retiro terrestre"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "au",
+      "name": "Australia",
+      "overview": "Vía Asia es una alternativa a cotizar. La escala estacional PAD en Pisco para diciembre 2026 no quedó confirmada por un comunicado primario vigente en esta revisión.",
+      "options": [
+        {
+          "id": "au-asia",
+          "label": "Vía Asia hacia Callao",
+          "path": [
+            "Puerto australiano",
+            "Hub del Sudeste Asiático",
+            "Hub transpacífico",
+            "Callao"
+          ],
+          "mode": "Marítimo con transbordos",
+          "panama": false,
+          "status": "propuesta",
+          "service": "Oceanía–Asia + servicio transpacífico a contratar",
+          "transit": "No verificado para Australia→Perú; retirar estimación genérica de 42 días.",
+          "note": "Maersk documenta conectividad estacional Melbourne–hubs asiáticos en agosto–octubre de 2026. Esa publicación no confirma una salida posterior al 5-oct ni toda la conexión a Perú.",
+          "sourceIds": [
+            "p_maersk_melbourne",
+            "p_msc_alpaca"
+          ],
+          "requirements": [
+            "Elegir puerto australiano y servicio vigente",
+            "Reconfirmar escalas estacionales",
+            "Cotización completa y número de transbordos",
+            "ETD/ETA por tramo"
+          ]
+        },
+        {
+          "id": "au-pisco",
+          "label": "PAD a Pisco: pendiente de confirmación",
+          "path": [
+            "Australia",
+            "Tauranga",
+            "Pisco",
+            "Destino terrestre en Perú"
+          ],
+          "mode": "Marítimo + camión",
+          "panama": false,
+          "status": "no_sustentada",
+          "service": "Hipótesis estacional CMA CGM PAD",
+          "transit": "Sin calendario primario de importación validado.",
+          "note": "La ficha PAD de marzo no muestra Pisco; los cut-offs peruanos de enero sí lo mencionan para exportación. Ninguno confirma la nueva temporada diciembre 2026 ni carga Australia→Pisco. Mantener fuera de rutas disponibles hasta respuesta oficial.",
+          "sourceIds": [
+            "p_cma_pad",
+            "p_cma_pisco_cutoff"
+          ],
+          "requirements": [
+            "Comunicado oficial de temporada 2026–27",
+            "Aceptación expresa de importación desde Australia",
+            "Nave/viaje y fecha inicial efectiva",
+            "Terminal, despacho y traslado Pisco–destino"
+          ]
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "risk-01",
+      "title": "Calado y cupos de reserva del Canal",
+      "category": "Riesgos",
+      "level": "validado",
+      "original": "Calado Neopanamax 49,0 pies; 33 cupos diarios desde 15-oct.",
+      "verdict": "Confirmado, con precisión de alcance",
+      "evidence": "A-36 fija ambos valores; el PDF oficial Gatún fechado 7-nov confirma 49,0 pies. A-39/A-40 consultados no alteran esas magnitudes.",
+      "correction": "Mostrar «49,0 pies · calado Neopanamax, fuente 7-nov» y «33 cupos diarios de reserva · A-36, vigentes desde 15-oct». No llamarlos 33 tránsitos efectivamente realizados.",
+      "sourceIds": [
+        "acp-a36",
+        "acp-a39",
+        "acp-a40",
+        "acp-gatun-20261107"
+      ]
+    },
+    {
+      "id": "risk-02",
+      "title": "Escenario 2027 y umbrales de calado",
+      "category": "Riesgos",
+      "level": "corregido",
+      "original": "La ventana crítica es enero a abril de 2027 y la ACP advirtió posible calado de 44 pies.",
+      "verdict": "Riesgo estacional respaldado; cifra de 44 pies no verificada en fuente primaria revisada",
+      "evidence": "A-29 expresa preocupación por enero–abril de 2027. Los avisos oficiales abiertos no establecen 44 pies; solo se localizaron notas secundarias sobre esa posibilidad.",
+      "correction": "Mantener enero–abril como escenario de planificación y retirar 44 pies de los datos verificados. Un umbral interno de 47 pies también debe identificarse como propuesta empresarial, no regla ACP.",
+      "sourceIds": [
+        "acp-a29",
+        "acp-a36",
+        "acp-a40"
+      ]
+    },
+    {
+      "id": "risk-03",
+      "title": "NOAA: datos mensuales con fecha visible",
+      "category": "Riesgos",
+      "level": "validado",
+      "original": "NOAA 8-oct: Niño 1+2 +3,9 °C; El Niño fuerte a muy fuerte probable hasta enero–marzo 2027, >83%.",
+      "verdict": "Confirmado como informe mensual de octubre",
+      "evidence": "La discusión oficial del 8-oct contiene ambos datos y anuncia próxima edición el 12-nov.",
+      "correction": "Conservar con fecha de publicación visible y etiqueta «informe mensual». No presentarlo como temperatura medida hoy ni deducir cierres locales de la probabilidad ENSO.",
+      "sourceIds": [
+        "noaa-enso-20261008"
+      ]
+    },
+    {
+      "id": "risk-04",
+      "title": "ENFEN: actualización al comunicado 19",
+      "category": "Riesgos",
+      "level": "actualizado",
+      "original": "ENFEN 18: magnitud extraordinaria hasta enero de 2027; próximo comunicado 30-oct.",
+      "verdict": "Correcto históricamente; actualización requerida",
+      "evidence": "ENFEN19 del 30-oct extiende la previsión extraordinaria hasta febrero de 2027; próxima edición 13-nov.",
+      "correction": "Sustituir el estado principal por ENFEN19 y su horizonte; conservar ENFEN18 solo en historial. Mantener el carácter probabilístico del pronóstico.",
+      "sourceIds": [
+        "enfen18",
+        "enfen19"
+      ]
+    },
+    {
+      "id": "risk-05",
+      "title": "84 cierres: conservar solo como dato histórico",
+      "category": "Puertos",
+      "level": "corregido",
+      "original": "84 puertos/caletas cerrados, KPI de situación.",
+      "verdict": "Dato histórico confirmado; no válido como KPI actual",
+      "evidence": "Andina documenta el corte de 23-oct con información DHN/COEN. No se obtuvo un nuevo conteo operativo fechado.",
+      "correction": "Mover «84» a historial con fecha 23-oct. En estado actual de puertos usar «pendiente de verificación DICAPI» hasta comprobar terminal y hora.",
+      "sourceIds": [
+        "andina-84-20261023",
+        "dicapi-status"
+      ]
+    },
+    {
+      "id": "risk-06",
+      "title": "Oleaje: reemplazo del aviso vencido",
+      "category": "Riesgos",
+      "level": "actualizado",
+      "original": "Aviso N.º 42 hasta el 25-oct como estado de oleaje.",
+      "verdict": "Aviso vencido",
+      "evidence": "DHN ya publica aviso 46-26 de 3-nov, válido hasta 8-nov; su archivo muestra los avisos intermedios.",
+      "correction": "Mostrar aviso 46-26 y su validez. Separar «pronóstico de oleaje DHN» de «estado oficial del puerto DICAPI».",
+      "sourceIds": [
+        "dhn-avisos",
+        "dicapi-status"
+      ]
+    },
+    {
+      "id": "risk-07",
+      "title": "Desvíos sujetos a terminal y resolución vigente",
+      "category": "Puertos",
+      "level": "pendiente",
+      "original": "Redirigir Callao a Chancay si está abierto, o Paita/Matarani ante cierre de costa centro.",
+      "verdict": "Regla condicional de planificación; estado actual por terminal pendiente de confirmar",
+      "evidence": "La consulta interactiva de DICAPI permitió leer resúmenes y registros de Callao/Chancay. Se observaron diferencias de alcance entre el agregado y las filas consultadas; no se abrieron los PDF de las resoluciones enlazadas. El aviso DHN describe oleaje y no resuelve esta validación por terminal.",
+      "correction": "Mantener el estado actual por verificar hasta comprobar terminal, resolución vigente y alcance. Antes de desviar, confirmar aceptación de naviera, escala efectiva, capacidad, retiro terrestre y efecto aduanero. No derivar apertura/cierre del pronóstico regional ni del resumen agregado.",
+      "sourceIds": [
+        "dicapi-status",
+        "dicapi-callao-rc269-link",
+        "dicapi-chancay-rc085-link",
+        "dhn-avisos"
+      ]
+    },
+    {
+      "id": "risk-08",
+      "title": "Consulta gratuita e integración automática",
+      "category": "Fuentes",
+      "level": "corregido",
+      "original": "Fuentes gratuitas para monitorear; estas fuentes sí se actualizan.",
+      "verdict": "Consulta pública comprobada; integración automática no demostrada",
+      "evidence": "ACP, NOAA, ENFEN y DHN se leyeron sin autenticación. DICAPI sí permitió consulta interactiva de resúmenes y registros. No se validó una API documentada ni una integración automática del dashboard; dos resoluciones PDF enlazadas no fueron leídas.",
+      "correction": "Identificar las fuentes como consultas públicas, con sus fechas y límites. Ofrecer acceso manual DICAPI por terminal y resolución. El dashboard utiliza información auditada al corte y no debe simular actualización en vivo; automatización posterior sujeta a prueba de endpoint y condiciones.",
+      "sourceIds": [
+        "acp-advisories",
+        "acp-gatun-index",
+        "noaa-enso-20261008",
+        "enfen19",
+        "dhn-avisos",
+        "dicapi-status"
+      ]
+    },
+    {
+      "id": "atl-f1",
+      "title": "SWX y MSW: alcance de la conexión a Callao",
+      "category": "Rutas",
+      "level": "validado",
+      "original": "SWX Rotterdam–Callao y MSW Mediterráneo–Callao",
+      "verdict": "Sustentada con alcance",
+      "evidence": "La rotación publicada une Rotterdam y otros puertos del norte de Europa con Callao. La retirada de Manzanillo, Panamá, se limita al sentido norte; el recorrido sur lo conserva. Revalidar itinerario por viaje. Confirma el enlace Mediterráneo–Callao y la exposición al Canal. Una conexión desde Rotterdam al Mediterráneo requiere validar el tramo adicional y el transbordo; no constituye una alternativa sin Panamá.",
+      "correction": "Los servicios están documentados. MSW sigue expuesto a Panamá; para salir de Rotterdam vía Mediterráneo falta confirmar el tramo de conexión. La documentación no equivale a booking vigente.",
+      "sourceIds": [
+        "atl-swx",
+        "atl-msw"
+      ]
+    },
+    {
+      "id": "atl-f2",
+      "title": "El tiempo del tren no es el tránsito total",
+      "category": "Rutas",
+      "level": "corregido",
+      "original": "PCRC mantiene un tiempo total cercano al cruce por agua; 1,5 h de tren",
+      "verdict": "No sustentada como transito integral",
+      "evidence": "Confirma la adquisición y una infraestructura ferroviaria de 76 km para movimiento de carga entre ambos océanos. No acredita cupos, tránsito integral ni una conexión contratada desde Europa o USA hacia Perú.",
+      "correction": "Se confirma la infraestructura y adquisición. Retirar la equivalencia de tiempo total: incluir descarga, transferencia, espera, tren, nueva carga y conexión marítima.",
+      "sourceIds": [
+        "atl-pcrc"
+      ]
+    },
+    {
+      "id": "atl-f3",
+      "title": "CON: frecuencia y exclusividad no generalizables",
+      "category": "Rutas",
+      "level": "corregido",
+      "original": "CON es quincenal y Brasil depende de un único servicio",
+      "verdict": "Generalizacion no sustentada",
+      "evidence": "La rotación incluye puertos brasileños, San Antonio y Callao. La frecuencia quincenal mencionada corresponde a Antofagasta/Puerto Angamos; no demuestra que Callao sea quincenal ni que todo CON tenga esa frecuencia.",
+      "correction": "El aviso asigna frecuencia quincenal a Antofagasta/Puerto Angamos. No prueba la frecuencia a Callao ni que no existan alternativas en todo el mercado.",
+      "sourceIds": [
+        "atl-con"
+      ]
+    },
+    {
+      "id": "atl-f4",
+      "title": "USA Pacífico: validar ruta sur y conexión",
+      "category": "Rutas",
+      "level": "corregido",
+      "original": "USA Pacífico–Manzanillo–Callao como alterna y 20 días del sentido inverso",
+      "verdict": "Requiere correccion",
+      "evidence": "Publica una conexión Los Ángeles/Port Hueneme–Centroamérica–Balboa. Es antecedente histórico, modificado posteriormente; no usar sus escalas ni tránsitos de 2024 como itinerario vigente. Informa la retirada de Manzanillo, México, de WCCA2; menciona Peru Feeder y otros servicios del Pacífico. La continuidad de una conexión USA–Perú debe confirmarse por viaje, puerto de transbordo y ventana operativa.",
+      "correction": "Separar propuesta geográfica de conexión contratada. Maersk retiró Manzanillo de WCCA2 según boletín de febrero de 2026. No transferir al sentido USA→Perú un tránsito Perú→USA.",
+      "sourceIds": [
+        "atl-wcca-2024",
+        "atl-wcca-2026"
+      ]
+    },
+    {
+      "id": "atl-f5",
+      "title": "AMERXL: corregir la mezcla de rotaciones",
+      "category": "Rutas",
+      "level": "corregido",
+      "original": "La base AMER-XL pasa por Kingston",
+      "verdict": "Rotacion no coincide con ficha consultada",
+      "evidence": "Publica frecuencia semanal y una secuencia sur desde Port Everglades, Filadelfia y Nueva York hasta Cartagena, Guayaquil y Callao. Los días de la ficha son orientativos y no sustituyen el itinerario del viaje. La consulta indexada muestra el paso por Panamá y omisiones de Callao en algunos viajes. La apertura directa no expone toda la tabla dinámica: el próximo embarque debe confirmarse en el buscador de la naviera.",
+      "correction": "La ficha CMA CGM consultada muestra Cartagena y Guayaquil, no Kingston. Presentar cada servicio por separado y comprobar el buque/viaje; evitar mezclar AMERXL con ZCX.",
+      "sourceIds": [
+        "atl-amerxl",
+        "atl-amerxl-schedule"
+      ]
+    },
+    {
+      "id": "atl-f6",
+      "title": "Seaboard: nueve días sin vigencia confirmada",
+      "category": "Rutas",
+      "level": "pendiente",
+      "original": "Seaboard Miami–Callao en nueve días, documento sin fecha",
+      "verdict": "Vigencia no verificada",
+      "evidence": "No quedó localizada una fuente primaria suficiente y fechada para validar el tránsito en 2026. Este límite no prueba que el servicio no exista.",
+      "correction": "No conservar nueve días como KPI vigente. La investigación halló documentos antiguos y referencias de distintos alcances (LCL/puerto a puerto), insuficientes para fijar el tránsito de 2026.",
+      "sourceIds": []
+    },
+    {
+      "id": "atl-f7",
+      "title": "México Pacífico: conexión publicada a Callao",
+      "category": "Rutas",
+      "level": "validado",
+      "original": "México Pacífico–Callao sin Panamá",
+      "verdict": "Sustentada con alcance",
+      "evidence": "La publicación oficial indexada anuncia frecuencia semanal y la secuencia Ensenada–Lázaro Cárdenas–Manzanillo–Callao; terminal DP World en Callao. La apertura directa devuelve 403, por lo que se declara esta limitación de recuperación. Describe CON por el Estrecho de Magallanes y las conexiones México Pacífico–costa oeste sudamericana. Publica servicios regionales, sin garantizar espacio ni tránsito de una operación particular.",
+      "correction": "AX4 está publicado para esta secuencia desde abril de 2026. Confirmar espacio y escalas por viaje. No convertir Salina Cruz–Perú ni una desconsolidación LCL en servicio verificado sin evidencia específica.",
+      "sourceIds": [
+        "atl-ax4",
+        "atl-intra"
+      ]
+    },
+    {
+      "id": "atl-f8",
+      "title": "Sudáfrica–Brasil: enlace faltante hacia CON",
+      "category": "Rutas",
+      "level": "corregido",
+      "original": "Durban–Santos + CON como alterna y trece días del sentido Santos–Durban",
+      "verdict": "Conexion no sustentada",
+      "evidence": "Publica la secuencia Durban–Luanda–Paranaguá en el retorno a Brasil. No permite enlazar automáticamente Durban–Santos con CON; tampoco demuestra que ningún otro operador sirva Durban–Santos. La rotación incluye puertos brasileños, San Antonio y Callao. La frecuencia quincenal mencionada corresponde a Antofagasta/Puerto Angamos; no demuestra que Callao sea quincenal ni que todo CON tenga esa frecuencia. Confirma ajustes de SAT asociados a esperas en Paranaguá y la reanudación de una rotación SAX desde Cape Town a London Gateway. Es evidencia operativa reciente, no una reserva de Sudáfrica a Perú.",
+      "correction": "SAT retiró Santos y usa Paranaguá desde noviembre de 2025. El circuito propuesto necesita un enlace adicional o un operador distinto confirmado. El dato inverso no valida el tránsito Durban→Brasil.",
+      "sourceIds": [
+        "atl-sat",
+        "atl-con",
+        "atl-africa-week45"
+      ]
+    },
+    {
+      "id": "atl-f9",
+      "title": "Países Bajos vía Brasil: conexión por confirmar",
+      "category": "Rutas",
+      "level": "pendiente",
+      "original": "Alternativa Holanda–Brasil–CON",
+      "verdict": "Tramos documentados conexion pendiente",
+      "evidence": "Publica un servicio Europa–costa este sudamericana que incluye Rotterdam y Santos/Itapoá. Sirve como evidencia del primer tramo de una alternativa vía Brasil; la conexión con CON debe cotizarse y confirmarse. La rotación incluye puertos brasileños, San Antonio y Callao. La frecuencia quincenal mencionada corresponde a Antofagasta/Puerto Angamos; no demuestra que Callao sea quincenal ni que todo CON tenga esa frecuencia.",
+      "correction": "ECX y CON publican puertos comunes en Brasil. Mantener como propuesta hasta confirmar transbordo, cupo y precio integral; no prometer frecuencia combinada ni días adicionales sin cotización.",
+      "sourceIds": [
+        "atl-ecx",
+        "atl-con"
+      ]
+    },
+    {
+      "id": "atl-f10",
+      "title": "La exposición a Panamá depende del itinerario",
+      "category": "Rutas",
+      "level": "corregido",
+      "original": "Toda carga desde costa este o Golfo cruza Panamá",
+      "verdict": "Afirmacion absoluta incorrecta",
+      "evidence": "Publica frecuencia semanal y una secuencia sur desde Port Everglades, Filadelfia y Nueva York hasta Cartagena, Guayaquil y Callao. Los días de la ficha son orientativos y no sustituyen el itinerario del viaje. Confirma la adquisición y una infraestructura ferroviaria de 76 km para movimiento de carga entre ambos océanos. No acredita cupos, tránsito integral ni una conexión contratada desde Europa o USA hacia Perú.",
+      "correction": "El cruce depende del itinerario. La ruta marítima base estudiada lo utiliza; un puente terrestre o ferroviario puede evitar las esclusas. Mantener dependencia por opción, no por país completo.",
+      "sourceIds": [
+        "atl-amerxl",
+        "atl-pcrc"
+      ]
+    },
+    {
+      "id": "p01",
+      "title": "WSA5: corregir el sentido de los 23 días",
+      "category": "Rutas",
+      "level": "corregido",
+      "original": "COSCO WSA5: Shanghái→Chancay directo en 23 días, dos salidas semanales.",
+      "verdict": "Corregir",
+      "evidence": "La publicación define expresamente 23 días para Chancay→Shanghái. No prueba el tránsito inverso de importación a Perú ni dos salidas semanales WSA5. El programa histórico muestra Shanghái, Qingdao, puertos mexicanos, Buenaventura, Guayaquil y Chancay antes de retornar a Shanghái. La dirección hacia Perú tiene escalas; verificar rotación y calendario actuales.",
+      "correction": "La publicación corporativa de COSCO atribuye 23 días a Chancay→Shanghái. OOCL documenta escalas en el sentido hacia Perú. Retirar los 23 días de importación y la frecuencia de dos salidas hasta obtener respaldo específico.",
+      "sourceIds": [
+        "p_cosco_23_export",
+        "p_oocl_tlp5"
+      ]
+    },
+    {
+      "id": "p02",
+      "title": "Alpaca: 23 días como referencia comercial fechada",
+      "category": "Rutas",
+      "level": "validado",
+      "original": "MSC Alpaca 23 días: el tránsito Asia–Perú más rápido publicado.",
+      "verdict": "Parcialmente sustentado",
+      "evidence": "Publica 23 días de tránsito desde Asia al Callao y frecuencia semanal. Es referencia comercial fechada, no un compromiso para cualquier origen asiático o cualquier viaje. Anuncio de servicio semanal para septiembre de 2025. Publica Ningbo–Busan–Callao y continuación a puertos chilenos. No verifica una salida de noviembre de 2026.",
+      "correction": "APM publicó 23 días en noviembre de 2025 y MSC documentó la rotación. Conservar como referencia histórica comercial; no afirmar liderazgo universal ni vigencia para cualquier viaje.",
+      "sourceIds": [
+        "p_apm_23",
+        "p_msc_alpaca"
+      ]
+    },
+    {
+      "id": "p03",
+      "title": "India: falta validar la conexión completa",
+      "category": "Rutas",
+      "level": "pendiente",
+      "original": "India–Perú: 55–79 días de agregador; rutas conectadas vía Asia.",
+      "verdict": "Sin validacion completa",
+      "evidence": "Publica conexión desde Mundra vía Singapur, Qingdao, Tianjin/Xingang y Busan a partir de febrero de 2025. No publica en este anuncio una conexión contratada hasta Perú. Anuncia SIS desde el 24 de abril de 2026. Rotación con Nhava Sheva, Mundra, Karachi, Port Klang y Singapur. Confirma conectividad intraasiática, sin ofrecer un tránsito a Perú. CIX3 eastbound enumera Nhava Sheva, Pipavav, Port Klang, Singapur, Hong Kong, Shanghái, Ningbo y Xiamen. Sirve como prueba de un tramo hacia hubs asiáticos; no confirma una conexión India–Perú.",
+      "correction": "Se documentaron tramos India–Asia. Mostrar las conexiones a Perú como propuestas pendientes y solicitar tránsito completo de naviera; retirar el rango de agregador como base operativa.",
+      "sourceIds": [
+        "p_hlag_iax",
+        "p_oocl_sis",
+        "p_oocl_cix3"
+      ]
+    },
+    {
+      "id": "p04",
+      "title": "Malasia: retirar el tránsito del sentido inverso",
+      "category": "Rutas",
+      "level": "corregido",
+      "original": "Malasia–Perú: referencia 38–39 días en sentido Perú→Malasia.",
+      "verdict": "Corregir",
+      "evidence": "El PDF oficial publica cobertura norte desde Port Klang y Penang hacia Shanghái, Ningbo y Nansha. Sus tiempos son indicativos. No prueba el enlace con Alpaca ni una fecha de transbordo. La ficha publica Port Klang–Singapur–Nansha–Xiamen–Qingdao–Tianjin en dirección norte. No se debe usar su tramo sur para deducir una conexión inversa hacia Perú.",
+      "correction": "El sentido inverso no acredita el tránsito de importación. Sustituir por pendiente de itinerario Malasia→Perú.",
+      "sourceIds": [
+        "p_msc_bungaraya",
+        "p_cnc_kcm2"
+      ]
+    },
+    {
+      "id": "p05",
+      "title": "Dos servicios no garantizan un transbordo aceptado",
+      "category": "Rutas",
+      "level": "pendiente",
+      "original": "Evergreen NCX + MSC Alpaca o cualquier combinación de navieras se presenta como alternativa enlazada.",
+      "verdict": "Requiere confirmacion comercial",
+      "evidence": "El PDF oficial publica cobertura norte desde Port Klang y Penang hacia Shanghái, Ningbo y Nansha. Sus tiempos son indicativos. No prueba el enlace con Alpaca ni una fecha de transbordo. Anuncio de servicio semanal para septiembre de 2025. Publica Ningbo–Busan–Callao y continuación a puertos chilenos. No verifica una salida de noviembre de 2026.",
+      "correction": "Publicar dos servicios no prueba un producto contratado, transferencia de carga ni espacio. Exigir cotización completa y conexión aceptada. Incluso los tramos de una misma naviera deben validarse por viaje.",
+      "sourceIds": [
+        "p_msc_bungaraya",
+        "p_msc_alpaca"
+      ]
+    },
+    {
+      "id": "p06",
+      "title": "Australia: alcance estacional de Southern Star",
+      "category": "Rutas",
+      "level": "corregido",
+      "original": "Australia vía Southern Star como ruta base permanente.",
+      "verdict": "Corregir alcance temporal",
+      "evidence": "Anuncia escalas de Melbourne para agosto–5 de octubre de 2026 y tiempos indicativos a Tanjung Pelepas/Singapur. No confirma una salida de Melbourne en noviembre ni el tránsito total a Perú.",
+      "correction": "La evidencia primaria encontrada para Melbourne enumera escalas estacionales hasta el 5-oct-2026. Mantener el esquema vía Asia sujeto a servicio vigente, sin atribuir continuidad ni 42 días a todo Australia.",
+      "sourceIds": [
+        "p_maersk_melbourne"
+      ]
+    },
+    {
+      "id": "p07",
+      "title": "PAD a Pisco: temporada e importación pendientes",
+      "category": "Rutas",
+      "level": "pendiente",
+      "original": "CMA CGM PAD incorporará Pisco desde diciembre 2026 como alternativa directa Australia–Perú verificada.",
+      "verdict": "Pendiente de fuente primaria",
+      "evidence": "Ficha oficial de PAD con Australia, Nueva Zelanda, Europa y costa este de Estados Unidos. La rotación mostrada no incluye Pisco; por ser anterior no refuta por sí sola un cambio anunciado para diciembre. El documento incluye Panama Direct Line (RTWPAN) en Pisco. Son instrucciones de exportación de enero; no acreditan aceptación de importaciones desde Australia ni la temporada diciembre 2026.",
+      "correction": "No se encontró comunicado primario que confirme esa temporada e importación. La ficha de marzo y los cut-offs de enero son insuficientes. Conservar como opción en investigación, no disponible.",
+      "sourceIds": [
+        "p_cma_pad",
+        "p_cma_pisco_cutoff"
+      ]
+    },
+    {
+      "id": "p08",
+      "title": "Chile–Perú: servicio internacional y cabotaje",
+      "category": "Rutas",
+      "level": "corregido",
+      "original": "Hapag-Lloyd WS3 / WS4 (cabotaje) para San Antonio→Callao.",
+      "verdict": "Corregir terminologia y servicio",
+      "evidence": "La sección Servicios lista AN2 hacia Perú, CON hacia Callao/Guayaquil y WS3 como feeder a Callao. AND se identifica separadamente como cabotaje chileno.",
+      "correction": "La fuente local identifica AND como cabotaje y WS3 como feeder a Callao; no respalda esa equivalencia con WS4. Etiquetar Chile–Perú como marítimo internacional y verificar puerto/servicio específico.",
+      "sourceIds": [
+        "p_hlag_chile"
+      ]
+    },
+    {
+      "id": "p09",
+      "title": "Chile terrestre: verificar frontera y carretera",
+      "category": "Rutas",
+      "level": "pendiente",
+      "original": "Chile terrestre: menor exposición por pronóstico de lluvias del sur.",
+      "verdict": "Inferencia insuficiente para operar",
+      "evidence": "Documenta atención de transporte de carga por Chacalluta. No acredita estado vial ni horario vigente el día del embarque; la información diferencia carga, carga agrícola y vehículos vacíos.",
+      "correction": "La existencia del corredor no prueba disponibilidad del día ni riesgo menor de todo el trayecto. Verificar frontera, carretera, destino, permisos y cobertura de transporte.",
+      "sourceIds": [
+        "p_chacalluta"
+      ]
+    },
+    {
+      "id": "extra-01",
+      "title": "Suez: retorno selectivo, sin escolta corroborada",
+      "category": "Riesgos",
+      "level": "corregido",
+      "original": "Maersk/Hapag regresan servicios a Suez de forma gradual, con escolta naval y reversible.",
+      "verdict": "Retorno selectivo anunciado confirmado; escolta naval no corroborada",
+      "evidence": "Comunicados Maersk/Hapag identifican servicios y cambios sujetos a seguridad, pero no incluyen la afirmación de escolta.",
+      "correction": "Mostrar «Retorno anunciado de determinados servicios Gemini vía Suez; sujeto a seguridad e itinerario vigente». Retirar «con escolta naval». No inferir reducción segura de fletes ni regreso de toda la red.",
+      "sourceIds": [
+        "maersk-suez-sep2026",
+        "hapag-suez-sep2026"
+      ]
+    },
+    {
+      "id": "extra-02",
+      "title": "FM1: anuncio de ruta y fechas aún por confirmar",
+      "category": "Riesgos",
+      "level": "corregido",
+      "original": "Ormuz: tráfico muy restringido; Gemini reinició FM1 vía Khor Fakkan sin Jebel Ali.",
+      "verdict": "Rotación FM1 anunciada corroborada; estado general de tráfico no cuantificado",
+      "evidence": "Aviso del 13-oct fija rotación sin Jebel Ali y mantiene restricciones. Fecha de arribo previsto a Khor Fakkan: 16-nov, posterior al corte de esta revisión.",
+      "correction": "Usar «FM1: relanzamiento anunciado vía Khor Fakkan; confirmar salida/arribo y aceptación». No afirmar arribo realizado ni usar el servicio como prueba de reapertura general de Ormuz.",
+      "sourceIds": [
+        "maersk-fm1-oct2026"
+      ]
+    },
+    {
+      "id": "extra-03",
+      "title": "México: acuerdo de retiro no prueba reapertura",
+      "category": "Riesgos",
+      "level": "corregido",
+      "original": "México: 38 puntos en 19 estados el 26-oct; bloqueos retirados el 27-oct.",
+      "verdict": "Conteo histórico corroborado en índice oficial; retiro efectivo general no acreditado",
+      "evidence": "Segob133 registra corte de 09:30. Segob138 anuncia compromiso de retiro, no una constatación de reapertura completa. Las aperturas directas no fueron posibles.",
+      "correction": "Historial: «38 puntos de manifestación/19 entidades, 26-oct 09:30; acuerdo de retiro anunciado 27-oct». Para situación actual, «pendiente de verificación por corredor». No equiparar manifestaciones con bloqueos totales.",
+      "sourceIds": [
+        "segob-133-2026",
+        "segob-138-2026"
+      ]
+    },
+    {
+      "id": "extra-04",
+      "title": "Chancay: separar cifras históricas y actuales",
+      "category": "Puertos",
+      "level": "corregido",
+      "original": "Chancay: 200 mil TEU primer semestre 2026; 45,5% transbordo en primer año; cuarto puerto.",
+      "verdict": "45,5% y posición histórica respaldados; 200 mil TEU semestrales no corroborados con primaria abierta",
+      "evidence": "Informe CECHAP abierto contiene proporción de transbordo y datos noviembre2024–noviembre2025. La cifra semestral2026 apareció solo en fuentes secundarias en esta búsqueda breve.",
+      "correction": "Conservar como contexto histórico «45,5% transbordo, periodo nov2024–nov2025, reporte enero2026». Retirar 200mil TEU y ranking del estado actual hasta disponer de estadística primaria del periodo correspondiente.",
+      "sourceIds": [
+        "cechap-chancay-jan2026"
+      ]
+    },
+    {
+      "id": "extra-05",
+      "title": "Matarani: próxima escala y aceptación pendientes",
+      "category": "Puertos",
+      "level": "pendiente",
+      "original": "Matarani: no puedo verificar servicios regulares de contenedores vigentes.",
+      "verdict": "Existe evidencia oficial/indexada de actividad, pero itinerario actual aún no verificado",
+      "evidence": "TISUR anuncia Evergreen/Hapag en página sin fecha; APN reporta contenedores2025. Ambas aperturas directas fallaron, y no se cotejó un calendario vigente de naviera.",
+      "correction": "Mostrar «Terminal con operación de contenedores; servicio, próxima escala y aceptación por confirmar». No habilitarlo como desvío confirmado solo por esa página.",
+      "sourceIds": [
+        "tisur-containers",
+        "apn-matarani-2025"
+      ]
+    },
+    {
+      "id": "ui-panama-filter",
+      "title": "Filtro Panamá: tabla y detalle sincronizados",
+      "category": "Funcionalidad",
+      "level": "corregido",
+      "original": "El interruptor sin Canal de Panamá filtraba la tabla pero dejaba visibles todas las pestañas y el detalle de una ruta excluida.",
+      "verdict": "Corregido en la nueva interfaz",
+      "evidence": "La revisión del HTML original identificó que tabla y pestañas tomaban listas distintas. La nueva interfaz usa el conjunto visible para seleccionar y mostrar opciones.",
+      "correction": "Aplicar el filtro a todas las opciones y sincronizar la selección con una ruta visible. Si no quedan resultados, mostrar estado vacío en lugar de información de una ruta excluida.",
+      "sourceIds": []
+    },
+    {
+      "id": "dicapi-scope-reconciliation",
+      "title": "DICAPI: conciliar resumen, terminal y resolución",
+      "category": "Puertos",
+      "level": "pendiente",
+      "original": "Usar el resumen agregado de Callao o Chancay como estado vigente de cualquier terminal del puerto.",
+      "verdict": "Diferencias de alcance o fecha aún no conciliadas",
+      "evidence": "Consulta interactiva: Callao mostraba 8 abiertos en el resumen; al buscar Bahía del Callao (rada y Muelle Grau), la fila superior indicaba cierre parcial, nivel III, RC 269-2026/MGP/DICAPI/CO, 31-oct-2026 09:00. Chancay mostraba 2 abiertos, 2 parciales y 2 cerrados, con muelles 1/2 rojos y 3/4 verdes. Para muelle 3, la fila superior indicaba puerto abierto, nivel I, RC 085-2026/MGP/DICAPI/CY, 25-oct-2026 17:30. Esas horas corresponden a los registros mostrados, no a la hora actual. Los dos PDF enlazados no fueron leídos.",
+      "correction": "Registrar la observación interactiva como evidencia de consulta. Verificar terminal exacto, resolución aplicable, alcance y vigencia antes de asignar un estado actual o activar un desvío. La diferencia entre resumen y registros puede responder a distintos alcances o fechas y no demuestra por sí sola un error de DICAPI.",
+      "sourceIds": [
+        "dicapi-status",
+        "dicapi-callao-rc269-link",
+        "dicapi-chancay-rc085-link"
+      ]
+    }
+  ],
+  "readiness": [
+    {
+      "source": "DICAPI",
+      "publicFreeRead": "Consulta interactiva pública completada: resúmenes y registros de Callao/Chancay legibles. Dos PDF de resolución enlazados no pudieron abrirse.",
+      "api": "API pública documentada no localizada; no equivale a afirmar que no exista",
+      "verifiedStatus": "Observación interactiva documentada; estado actual y alcance de cada terminal/resolución por confirmar.",
+      "recommendedMode": "Consulta interactiva por terminal, conciliación de resumen y registros, apertura de resolución vigente y registro de fecha/hora de la fuente.",
+      "automaticAppConnectivityTested": false,
+      "sourceIds": [
+        "dicapi-status",
+        "dicapi-callao-rc269-link",
+        "dicapi-chancay-rc085-link"
+      ]
+    },
+    {
+      "source": "ACP",
+      "publicFreeRead": "PDF de avisos y PDF diario Gatún leídos sin autenticación",
+      "api": "No se verificó API; página pública anuncia CSV históricos y de proyección, endpoints pendientes",
+      "verifiedStatus": "Calado diario fechado 7-nov y reserva A-36 confirmados",
+      "recommendedMode": "Enlaces oficiales y carga revisada con fecha; automatización posterior solo tras prueba de endpoint y condiciones",
+      "automaticAppConnectivityTested": false,
+      "sourceIds": [
+        "acp-advisories",
+        "acp-gatun-index",
+        "acp-gatun-20261107"
+      ]
+    },
+    {
+      "source": "NOAA CPC",
+      "publicFreeRead": "Informe ENSO HTML mensual leído sin autenticación",
+      "api": "Para este producto se comprobó HTML, no una API",
+      "verifiedStatus": "Informe 8-oct confirmado; próximo 12-nov",
+      "recommendedMode": "Ficha mensual con fecha; sin extrapolar temperatura ni estados de puertos",
+      "automaticAppConnectivityTested": false,
+      "sourceIds": [
+        "noaa-enso-20261008"
+      ]
+    },
+    {
+      "source": "ENFEN",
+      "publicFreeRead": "Páginas y PDF oficiales leídos sin autenticación",
+      "api": "No se comprobó API de comunicados",
+      "verifiedStatus": "Comunicado 19 del 30-oct confirmado; próximo 13-nov",
+      "recommendedMode": "Consulta de comunicado vigente y carga revisada con fecha",
+      "automaticAppConnectivityTested": false,
+      "sourceIds": [
+        "enfen19"
+      ]
+    },
+    {
+      "source": "DHN",
+      "api": "No se comprobó API de avisos",
+      "verifiedStatus": "Aviso 46-26 válido del 3 al 8-nov confirmado",
+      "recommendedMode": "Aviso por región con fecha de emisión y fin de vigencia; no sustituye DICAPI",
+      "automaticAppConnectivityTested": false,
+      "sourceIds": [
+        "dhn-avisos"
+      ],
+      "publicFreeRead": "Avisos públicos HTML leídos sin autenticación"
+    }
+  ]
+}
