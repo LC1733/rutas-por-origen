@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-09T20:21:08Z",
-  "runUrl": "https://github.com/LC1733/rutas-por-origen/actions/runs/42692061892",
+  "generatedAt": "2026-11-09T21:21:19Z",
+  "runUrl": "https://github.com/LC1733/rutas-por-origen/actions/runs/42701636788",
   "scheduleMinutes": 60,
   "sources": {
     "acp-gatun": {
       "id": "acp-gatun",
       "name": "ACP · Indicadores de Gatún",
       "url": "https://evtms-rpts.pancanal.com/eng/h2o/GatunWaterIndicators.pdf",
-      "checkedAt": "2026-11-09T20:20:50Z",
-      "lastSuccessAt": "2026-11-09T20:20:50Z",
+      "checkedAt": "2026-11-09T21:21:02Z",
+      "lastSuccessAt": "2026-11-09T21:21:02Z",
       "status": "ok",
       "sourceDate": "2026-11-09",
       "error": null,
@@ -28,24 +28,30 @@
       "id": "acp-advisories",
       "name": "ACP · Avisos a las navieras",
       "url": "https://pancanal.com/en/maritime-services/advisory-to-shipping/",
-      "checkedAt": "2026-11-09T20:20:50Z",
-      "lastSuccessAt": "2026-11-09T20:20:50Z",
-      "status": "ok",
-      "sourceDate": "2026-10-30",
-      "error": null,
+      "checkedAt": "2026-11-09T21:21:02Z",
+      "lastSuccessAt": "2026-11-09T21:21:02Z",
+      "status": "partial",
+      "sourceDate": null,
+      "error": "Índice actualizado. Fecha del último PDF sin verificar: El PDF está protegido o excede el límite de páginas",
       "data": {
         "latest": {
-          "number": "A-40-2026",
-          "title": "A-40-2026 Updated NetZero Slot Eligibility Requirements for First-Time Transit Vessels and Modifications to the Transit Reservation (Booking) System",
-          "url": "https://pancanal.com/wp-content/uploads/2026/10/ADV-40-2026-Updated-NetZero-Slot-Eligibility-Requirements.pdf",
-          "publishedAt": "2026-10-30"
+          "number": "A-42-2026",
+          "title": "A-42-2026 Increase in the Number of Booking Slots at the Panamax Locks and in the Maximum Allowable Draft at the Neopanamax Locks",
+          "url": "https://pancanal.com/wp-content/uploads/2026/11/ADV-42-2026-Increase-in-the-Number-of-Booking-Slots-at-the-Panamax-Locks-and-in-the-Maximum-Allowable-Draft-at-the-Neopanamax-Locks-.pdf",
+          "publishedAt": null
         },
         "items": [
+          {
+            "number": "A-42-2026",
+            "title": "A-42-2026 Increase in the Number of Booking Slots at the Panamax Locks and in the Maximum Allowable Draft at the Neopanamax Locks",
+            "url": "https://pancanal.com/wp-content/uploads/2026/11/ADV-42-2026-Increase-in-the-Number-of-Booking-Slots-at-the-Panamax-Locks-and-in-the-Maximum-Allowable-Draft-at-the-Neopanamax-Locks-.pdf",
+            "publishedAt": null
+          },
           {
             "number": "A-40-2026",
             "title": "A-40-2026 Updated NetZero Slot Eligibility Requirements for First-Time Transit Vessels and Modifications to the Transit Reservation (Booking) System",
             "url": "https://pancanal.com/wp-content/uploads/2026/10/ADV-40-2026-Updated-NetZero-Slot-Eligibility-Requirements.pdf",
-            "publishedAt": "2026-10-30"
+            "publishedAt": null
           },
           {
             "number": "A-39-2026",
@@ -82,26 +88,20 @@
             "title": "A-34-2026 Monthly Canal Operations Summary – August 2026",
             "url": "https://pancanal.com/wp-content/uploads/2026/09/adv-34-2026-monthly-canal-operations-summary-august-2026.pdf",
             "publishedAt": null
-          },
-          {
-            "number": "A-33-2026",
-            "title": "A-33-2026 Postponement of Maximum Authorized Draft Adjustment in the Neopanamax Locks",
-            "url": "https://pancanal.com/wp-content/uploads/2026/09/ADV-33-2026-Postponement-of-Maximum-Authorized-Draft-Adjustment-in-the-Neopanamax-Locks.pdf",
-            "publishedAt": null
           }
         ],
         "bookingSlotsRequireReview": true,
         "scope": "Detecta avisos nuevos. No cambia automáticamente cupos, tarifas ni límites normativos."
       },
-      "checksum": "201d21f9e6c54af85e675d01c58a99f14d3cbd3cb0a29ed9f8892fff497ea5f6",
-      "changedAt": "2026-11-07T17:09:02Z"
+      "checksum": "4e90708db732cbefa32534f98eacf2ef5f85ec4e7fc73fcb6f3749a166cfccec",
+      "changedAt": "2026-11-09T21:21:02Z"
     },
     "noaa": {
       "id": "noaa",
       "name": "NOAA · ENSO",
       "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml",
-      "checkedAt": "2026-11-09T20:20:50Z",
-      "lastSuccessAt": "2026-11-09T20:20:50Z",
+      "checkedAt": "2026-11-09T21:21:02Z",
+      "lastSuccessAt": "2026-11-09T21:21:02Z",
       "status": "ok",
       "sourceDate": "2026-10-08",
       "error": null,
@@ -135,7 +135,7 @@
       "id": "enfen",
       "name": "ENFEN · Comunicados oficiales",
       "url": "https://enfen.imarpe.gob.pe/comunicados/",
-      "checkedAt": "2026-11-09T20:20:50Z",
+      "checkedAt": "2026-11-09T21:21:02Z",
       "lastSuccessAt": "2026-11-07T17:09:02Z",
       "status": "error",
       "sourceDate": "2026-10-30",
@@ -172,8 +172,8 @@
       "id": "dhn",
       "name": "DHN · Avisos de oleaje",
       "url": "https://www.dhn.mil.pe/portal/avisos-especiales",
-      "checkedAt": "2026-11-09T20:20:50Z",
-      "lastSuccessAt": "2026-11-09T20:20:50Z",
+      "checkedAt": "2026-11-09T21:21:02Z",
+      "lastSuccessAt": "2026-11-09T21:21:02Z",
       "status": "ok",
       "sourceDate": "2026-11-08",
       "error": null,
@@ -237,8 +237,8 @@
       "id": "dicapi",
       "name": "DICAPI · Estado por instalación",
       "url": "https://www.dicapi.mil.pe/estado-de-puertos",
-      "checkedAt": "2026-11-09T20:20:50Z",
-      "lastSuccessAt": "2026-11-09T20:20:50Z",
+      "checkedAt": "2026-11-09T21:21:02Z",
+      "lastSuccessAt": "2026-11-09T21:21:02Z",
       "status": "partial",
       "sourceDate": null,
       "error": "3 instalación(es) con diferencias entre resumen e historial.",
