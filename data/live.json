@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-12T13:21:39Z",
-  "runUrl": "https://github.com/LC1733/rutas-por-origen/actions/runs/43226465966",
+  "generatedAt": "2026-11-12T14:23:01Z",
+  "runUrl": "https://github.com/LC1733/rutas-por-origen/actions/runs/43236429457",
   "scheduleMinutes": 60,
   "sources": {
     "acp-gatun": {
       "id": "acp-gatun",
       "name": "ACP · Indicadores de Gatún",
       "url": "https://evtms-rpts.pancanal.com/eng/h2o/GatunWaterIndicators.pdf",
-      "checkedAt": "2026-11-12T13:21:22Z",
-      "lastSuccessAt": "2026-11-12T13:21:22Z",
+      "checkedAt": "2026-11-12T14:22:10Z",
+      "lastSuccessAt": "2026-11-12T14:22:10Z",
       "status": "ok",
       "sourceDate": "2026-11-12",
       "error": null,
@@ -28,8 +28,8 @@
       "id": "acp-advisories",
       "name": "ACP · Avisos a las navieras",
       "url": "https://pancanal.com/en/maritime-services/advisory-to-shipping/",
-      "checkedAt": "2026-11-12T13:21:22Z",
-      "lastSuccessAt": "2026-11-12T13:21:22Z",
+      "checkedAt": "2026-11-12T14:22:10Z",
+      "lastSuccessAt": "2026-11-12T14:22:10Z",
       "status": "partial",
       "sourceDate": null,
       "error": "Índice actualizado. Fecha del último PDF sin verificar: El PDF está protegido o excede el límite de páginas",
@@ -100,42 +100,42 @@
       "id": "noaa",
       "name": "NOAA · ENSO",
       "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml",
-      "checkedAt": "2026-11-12T13:21:22Z",
-      "lastSuccessAt": "2026-11-12T13:21:22Z",
+      "checkedAt": "2026-11-12T14:22:10Z",
+      "lastSuccessAt": "2026-11-12T14:22:10Z",
       "status": "ok",
-      "sourceDate": "2026-10-08",
+      "sourceDate": "2026-11-12",
       "error": null,
       "data": {
         "latest": {
           "title": "ENSO Diagnostic Discussion",
           "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml",
-          "publishedAt": "2026-10-08",
+          "publishedAt": "2026-11-12",
           "alertStatus": "El Niño Advisory",
-          "summary": "El Niño continues to strengthen, with a strong-to-very strong El Niño likely through January-March 2027 (remaining greater than an 83% chance).",
-          "nextReleaseDate": "2026-11-12",
-          "nino12AnomalyC": 3.9
+          "summary": "El Niño continues to strengthen, with a strong-to-very strong El Niño likely through January-March 2027 (remaining greater than a 79% chance).",
+          "nextReleaseDate": "2026-12-10",
+          "nino12AnomalyC": 4.4
         },
         "items": [
           {
             "title": "ENSO Diagnostic Discussion",
             "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml",
-            "publishedAt": "2026-10-08",
+            "publishedAt": "2026-11-12",
             "alertStatus": "El Niño Advisory",
-            "summary": "El Niño continues to strengthen, with a strong-to-very strong El Niño likely through January-March 2027 (remaining greater than an 83% chance).",
-            "nextReleaseDate": "2026-11-12",
-            "nino12AnomalyC": 3.9
+            "summary": "El Niño continues to strengthen, with a strong-to-very strong El Niño likely through January-March 2027 (remaining greater than a 79% chance).",
+            "nextReleaseDate": "2026-12-10",
+            "nino12AnomalyC": 4.4
           }
         ],
         "scope": "Boletín mensual. La fecha de consulta no es la fecha de la observación climática."
       },
-      "checksum": "79c7e274615cecc41c2b71dddc1a5ea921b495a8da10017e6986e52433c59df2",
-      "changedAt": "2026-11-07T17:09:02Z"
+      "checksum": "5548aa8baca9fd616911f288cc6a02e84e500a46b4a1689dfde451943aab27a4",
+      "changedAt": "2026-11-12T14:22:10Z"
     },
     "enfen": {
       "id": "enfen",
       "name": "ENFEN · Comunicados oficiales",
       "url": "https://enfen.imarpe.gob.pe/comunicados/",
-      "checkedAt": "2026-11-12T13:21:22Z",
+      "checkedAt": "2026-11-12T14:22:10Z",
       "lastSuccessAt": "2026-11-07T17:09:02Z",
       "status": "error",
       "sourceDate": "2026-10-30",
@@ -172,11 +172,11 @@
       "id": "dhn",
       "name": "DHN · Avisos de oleaje",
       "url": "https://www.dhn.mil.pe/portal/avisos-especiales",
-      "checkedAt": "2026-11-12T13:21:22Z",
+      "checkedAt": "2026-11-12T14:22:10Z",
       "lastSuccessAt": "2026-11-12T13:21:22Z",
-      "status": "ok",
+      "status": "error",
       "sourceDate": "2026-11-08",
-      "error": null,
+      "error": "www.dhn.mil.pe: Tiempo de espera de red agotado (25 s por intento) tras 2 intentos",
       "data": {
         "latest": {
           "number": "47-26",
@@ -237,8 +237,8 @@
       "id": "dicapi",
       "name": "DICAPI · Estado por instalación",
       "url": "https://www.dicapi.mil.pe/estado-de-puertos",
-      "checkedAt": "2026-11-12T13:21:22Z",
-      "lastSuccessAt": "2026-11-12T13:21:22Z",
+      "checkedAt": "2026-11-12T14:22:10Z",
+      "lastSuccessAt": "2026-11-12T14:22:10Z",
       "status": "partial",
       "sourceDate": null,
       "error": "3 instalación(es) con diferencias entre resumen e historial.",
