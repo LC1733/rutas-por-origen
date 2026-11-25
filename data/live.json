@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-25T15:21:32Z",
-  "runUrl": "https://github.com/LC1733/rutas-por-origen/actions/runs/45644166969",
+  "generatedAt": "2026-11-25T16:25:48Z",
+  "runUrl": "https://github.com/LC1733/rutas-por-origen/actions/runs/45653668003",
   "scheduleMinutes": 60,
   "sources": {
     "acp-gatun": {
       "id": "acp-gatun",
       "name": "ACP · Indicadores de Gatún",
       "url": "https://evtms-rpts.pancanal.com/eng/h2o/GatunWaterIndicators.pdf",
-      "checkedAt": "2026-11-25T15:21:26Z",
-      "lastSuccessAt": "2026-11-25T15:21:26Z",
+      "checkedAt": "2026-11-25T16:25:41Z",
+      "lastSuccessAt": "2026-11-25T16:25:41Z",
       "status": "ok",
       "sourceDate": "2026-11-25",
       "error": null,
@@ -28,8 +28,8 @@
       "id": "acp-advisories",
       "name": "ACP · Avisos a las navieras",
       "url": "https://pancanal.com/en/maritime-services/advisory-to-shipping/",
-      "checkedAt": "2026-11-25T15:21:26Z",
-      "lastSuccessAt": "2026-11-25T15:21:26Z",
+      "checkedAt": "2026-11-25T16:25:41Z",
+      "lastSuccessAt": "2026-11-25T16:25:41Z",
       "status": "partial",
       "sourceDate": null,
       "error": "Índice actualizado. Fecha del último PDF sin verificar: El PDF está protegido o excede el límite de páginas",
@@ -100,8 +100,8 @@
       "id": "noaa",
       "name": "NOAA · ENSO",
       "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml",
-      "checkedAt": "2026-11-25T15:21:26Z",
-      "lastSuccessAt": "2026-11-25T15:21:26Z",
+      "checkedAt": "2026-11-25T16:25:41Z",
+      "lastSuccessAt": "2026-11-25T16:25:41Z",
       "status": "ok",
       "sourceDate": "2026-11-12",
       "error": null,
@@ -135,8 +135,8 @@
       "id": "enfen",
       "name": "ENFEN · Comunicados oficiales",
       "url": "https://enfen.imarpe.gob.pe/comunicados/",
-      "checkedAt": "2026-11-25T15:21:26Z",
-      "lastSuccessAt": "2026-11-25T15:21:26Z",
+      "checkedAt": "2026-11-25T16:25:41Z",
+      "lastSuccessAt": "2026-11-25T16:25:41Z",
       "status": "ok",
       "sourceDate": "2026-11-13",
       "error": null,
@@ -172,8 +172,8 @@
       "id": "dhn",
       "name": "DHN · Avisos de oleaje",
       "url": "https://www.dhn.mil.pe/portal/avisos-especiales",
-      "checkedAt": "2026-11-25T15:21:26Z",
-      "lastSuccessAt": "2026-11-25T15:21:26Z",
+      "checkedAt": "2026-11-25T16:25:41Z",
+      "lastSuccessAt": "2026-11-25T16:25:41Z",
       "status": "ok",
       "sourceDate": "2026-11-24",
       "error": null,
@@ -237,11 +237,11 @@
       "id": "dicapi",
       "name": "DICAPI · Estado por instalación",
       "url": "https://www.dicapi.mil.pe/estado-de-puertos",
-      "checkedAt": "2026-11-25T15:21:26Z",
-      "lastSuccessAt": "2026-11-25T15:21:26Z",
+      "checkedAt": "2026-11-25T16:25:41Z",
+      "lastSuccessAt": "2026-11-25T16:25:41Z",
       "status": "partial",
       "sourceDate": null,
-      "error": "6 instalación(es) con diferencias entre resumen e historial.",
+      "error": "7 instalación(es) con diferencias entre resumen e historial.",
       "data": {
         "ports": [
           {
@@ -351,9 +351,9 @@
             "name": "ZONA CENTRO (BAHÍA CALLAO (RADA INTERIOR Y EXTERIOR) Y MUELLE GRAU)",
             "captaincy": "Callao",
             "captaincyId": 1,
-            "status": "Cierre Parcial del Puerto",
-            "level": "Nivel III",
-            "levelId": 3,
+            "status": "Puerto Abierto",
+            "level": "Nivel I",
+            "levelId": 1,
             "publishedAt": "2026-11-23T22:30:00.000Z",
             "updatedAt": "2026-11-24T00:13:31.000Z",
             "resolutionNumber": "RC N°318-2026/MGP/DICAPI/CO",
@@ -370,13 +370,15 @@
               "resolutionUrl": "https://www.dicapi.mil.pe/storage/state-ports/a96a457b-38ea-42d6-b000-a03f6c9e421c.pdf",
               "resolutionVerified": false
             },
-            "discrepancy": false,
-            "needsValidation": false,
+            "discrepancy": true,
+            "needsValidation": true,
             "historyStatus": "ok",
             "historyScope": "Primera página del historial oficial, hasta 10 registros.",
             "historySampleSize": 10,
             "historyTotalRecords": 250,
-            "issues": [],
+            "issues": [
+              "El resumen y el historial difieren en el estado/nivel. Confirmar el alcance y la vigencia con capitanía/terminal."
+            ],
             "sourceUrl": "https://www.dicapi.mil.pe/api/ports?captaincy=1",
             "historyUrl": "https://www.dicapi.mil.pe/api/ports?history=true&portId=46&page=1&pageSize=10"
           },
@@ -739,10 +741,10 @@
             "name": "Callao",
             "slug": "callao",
             "total": 8,
-            "open": 7,
-            "partiallyClosed": 1,
+            "open": 8,
+            "partiallyClosed": 0,
             "closed": 0,
-            "discrepancies": 2
+            "discrepancies": 3
           },
           {
             "id": 7,
@@ -765,11 +767,11 @@
         "timezoneNote": "Las fechas JSON incluyen Z (UTC). La interfaz puede mostrarlas en hora de Perú.",
         "historyLabel": "Registro más reciente devuelto en la primera página del historial",
         "publicPageUrl": "https://www.dicapi.mil.pe/estado-de-puertos",
-        "discrepancyCount": 6,
+        "discrepancyCount": 7,
         "incompleteHistoryCount": 0
       },
-      "checksum": "508511331afff0352d9f3759050748ece7810a159733509b587b88002cd7a313",
-      "changedAt": "2026-11-25T15:21:26Z"
+      "checksum": "5b7db8f56360a71247f49972c6b77340ec957b044b0c7deaf696ef2b3201fd1b",
+      "changedAt": "2026-11-25T16:25:41Z"
     }
   }
 }
