@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-26T20:21:27Z",
-  "runUrl": "https://github.com/LC1733/rutas-por-origen/actions/runs/45890409005",
+  "generatedAt": "2026-11-26T21:21:27Z",
+  "runUrl": "https://github.com/LC1733/rutas-por-origen/actions/runs/45897530789",
   "scheduleMinutes": 60,
   "sources": {
     "acp-gatun": {
       "id": "acp-gatun",
       "name": "ACP · Indicadores de Gatún",
       "url": "https://evtms-rpts.pancanal.com/eng/h2o/GatunWaterIndicators.pdf",
-      "checkedAt": "2026-11-26T20:21:22Z",
-      "lastSuccessAt": "2026-11-26T20:21:22Z",
+      "checkedAt": "2026-11-26T21:21:24Z",
+      "lastSuccessAt": "2026-11-26T21:21:24Z",
       "status": "ok",
       "sourceDate": "2026-11-26",
       "error": null,
@@ -28,23 +28,35 @@
       "id": "acp-advisories",
       "name": "ACP · Avisos a las navieras",
       "url": "https://pancanal.com/en/maritime-services/advisory-to-shipping/",
-      "checkedAt": "2026-11-26T20:21:22Z",
-      "lastSuccessAt": "2026-11-26T20:21:22Z",
-      "status": "partial",
-      "sourceDate": null,
-      "error": "Índice actualizado. Fecha del último PDF sin verificar: El PDF está protegido o excede el límite de páginas",
+      "checkedAt": "2026-11-26T21:21:24Z",
+      "lastSuccessAt": "2026-11-26T21:21:24Z",
+      "status": "ok",
+      "sourceDate": "2026-11-26",
+      "error": null,
       "data": {
         "latest": {
-          "number": "A-42-2026",
-          "title": "A-42-2026 Increase in the Number of Booking Slots at the Panamax Locks and in the Maximum Allowable Draft at the Neopanamax Locks",
-          "url": "https://pancanal.com/wp-content/uploads/2026/11/ADV-42-2026-Increase-in-the-Number-of-Booking-Slots-at-the-Panamax-Locks-and-in-the-Maximum-Allowable-Draft-at-the-Neopanamax-Locks-.pdf",
-          "publishedAt": null
+          "number": "A-43-2026",
+          "title": "A-43-2026 Second Round – Long-Term Slot Allocation (LoTSA) Panamax Auction",
+          "url": "https://pancanal.com/wp-content/uploads/2026/11/Advisory-LoTSA-Panamax-Second-Round.pdf",
+          "publishedAt": "2026-11-26"
         },
         "items": [
+          {
+            "number": "A-43-2026",
+            "title": "A-43-2026 Second Round – Long-Term Slot Allocation (LoTSA) Panamax Auction",
+            "url": "https://pancanal.com/wp-content/uploads/2026/11/Advisory-LoTSA-Panamax-Second-Round.pdf",
+            "publishedAt": "2026-11-26"
+          },
           {
             "number": "A-42-2026",
             "title": "A-42-2026 Increase in the Number of Booking Slots at the Panamax Locks and in the Maximum Allowable Draft at the Neopanamax Locks",
             "url": "https://pancanal.com/wp-content/uploads/2026/11/ADV-42-2026-Increase-in-the-Number-of-Booking-Slots-at-the-Panamax-Locks-and-in-the-Maximum-Allowable-Draft-at-the-Neopanamax-Locks-.pdf",
+            "publishedAt": null
+          },
+          {
+            "number": "A-41-2026",
+            "title": "A-41-2026 Canal Operations Summary October 2026",
+            "url": "https://pancanal.com/wp-content/uploads/2026/04/ADV-41-2026-Monthly-Canal-Operations-Summary-November-2026.pdf",
             "publishedAt": null
           },
           {
@@ -76,32 +88,20 @@
             "title": "A-36-2026 Increase in the Number of Neopanamax Booking Slots, Draft Adjustment and Transit Reservation System",
             "url": "https://pancanal.com/wp-content/uploads/2026/04/ADV-36-2026-Increase-in-the-Number-of-Neopanamax-Booking-Slots-Draft-Adjustment-and-Transit-Reservation-System.pdf",
             "publishedAt": null
-          },
-          {
-            "number": "A-35-2026",
-            "title": "A-35-2026 Clarification on Consecutive Booking Dates Limitation in the Panamax Locks Across Different Booking Periods",
-            "url": "https://pancanal.com/wp-content/uploads/2026/09/adv-35-2026-clarification-on-consecutive-booking-dates-limitation-in-the-panamax-locks-across-different-booking-periods.pdf",
-            "publishedAt": null
-          },
-          {
-            "number": "A-34-2026",
-            "title": "A-34-2026 Monthly Canal Operations Summary – August 2026",
-            "url": "https://pancanal.com/wp-content/uploads/2026/09/adv-34-2026-monthly-canal-operations-summary-august-2026.pdf",
-            "publishedAt": null
           }
         ],
         "bookingSlotsRequireReview": true,
         "scope": "Detecta avisos nuevos. No cambia automáticamente cupos, tarifas ni límites normativos."
       },
-      "checksum": "4e90708db732cbefa32534f98eacf2ef5f85ec4e7fc73fcb6f3749a166cfccec",
-      "changedAt": "2026-11-09T21:21:02Z"
+      "checksum": "54db6461dd6e65e371b51a485ce0c5efef5ad4d9c2a13df71339f9d3bd68f409",
+      "changedAt": "2026-11-26T21:21:24Z"
     },
     "noaa": {
       "id": "noaa",
       "name": "NOAA · ENSO",
       "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml",
-      "checkedAt": "2026-11-26T20:21:22Z",
-      "lastSuccessAt": "2026-11-26T20:21:22Z",
+      "checkedAt": "2026-11-26T21:21:24Z",
+      "lastSuccessAt": "2026-11-26T21:21:24Z",
       "status": "ok",
       "sourceDate": "2026-11-12",
       "error": null,
@@ -135,8 +135,8 @@
       "id": "enfen",
       "name": "ENFEN · Comunicados oficiales",
       "url": "https://enfen.imarpe.gob.pe/comunicados/",
-      "checkedAt": "2026-11-26T20:21:22Z",
-      "lastSuccessAt": "2026-11-26T20:21:22Z",
+      "checkedAt": "2026-11-26T21:21:24Z",
+      "lastSuccessAt": "2026-11-26T21:21:24Z",
       "status": "ok",
       "sourceDate": "2026-11-13",
       "error": null,
@@ -144,7 +144,7 @@
         "latest": {
           "number": "20-2026",
           "title": "Comunicado Oficial ENFEN N.º 20-2026",
-          "url": "https://enfen.imarpe.gob.pe/download/comunicado-oficial-enfen-n-20-2026/?wpdmdl=2218&refresh=6b087f5e759cf1795719006",
+          "url": "https://enfen.imarpe.gob.pe/download/comunicado-oficial-enfen-n-20-2026/?wpdmdl=2218&refresh=6b089aca4c0791795726026",
           "publishedAt": "2026-11-13",
           "summary": "EL NIÑO COSTERO CONTINUARÍA HASTA INICIOS DE INVIERNO DE 2027",
           "alertStatus": "Alerta de El Niño Costero",
@@ -155,7 +155,7 @@
           {
             "number": "20-2026",
             "title": "Comunicado Oficial ENFEN N.º 20-2026",
-            "url": "https://enfen.imarpe.gob.pe/download/comunicado-oficial-enfen-n-20-2026/?wpdmdl=2218&refresh=6b087f5e759cf1795719006",
+            "url": "https://enfen.imarpe.gob.pe/download/comunicado-oficial-enfen-n-20-2026/?wpdmdl=2218&refresh=6b089aca4c0791795726026",
             "publishedAt": "2026-11-13",
             "summary": "EL NIÑO COSTERO CONTINUARÍA HASTA INICIOS DE INVIERNO DE 2027",
             "alertStatus": "Alerta de El Niño Costero",
@@ -172,8 +172,8 @@
       "id": "dhn",
       "name": "DHN · Avisos de oleaje",
       "url": "https://www.dhn.mil.pe/portal/avisos-especiales",
-      "checkedAt": "2026-11-26T20:21:22Z",
-      "lastSuccessAt": "2026-11-26T20:21:22Z",
+      "checkedAt": "2026-11-26T21:21:24Z",
+      "lastSuccessAt": "2026-11-26T21:21:24Z",
       "status": "ok",
       "sourceDate": "2026-11-24",
       "error": null,
@@ -237,8 +237,8 @@
       "id": "dicapi",
       "name": "DICAPI · Estado por instalación",
       "url": "https://www.dicapi.mil.pe/estado-de-puertos",
-      "checkedAt": "2026-11-26T20:21:22Z",
-      "lastSuccessAt": "2026-11-26T20:21:22Z",
+      "checkedAt": "2026-11-26T21:21:24Z",
+      "lastSuccessAt": "2026-11-26T21:21:24Z",
       "status": "partial",
       "sourceDate": null,
       "error": "7 instalación(es) con diferencias entre resumen e historial.",
